@@ -1,10 +1,11 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import Header from './components/Header';
+import AboutMe from './components/AboutMe';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background: #717a88;
+    background: gray;
   }
 `;
 
@@ -13,6 +14,7 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
+      <AboutMe />
     </>
   );
 }
