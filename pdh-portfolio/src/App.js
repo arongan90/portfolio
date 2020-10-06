@@ -4,7 +4,7 @@ import Header from './components/Header';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background: pink;
+    background: #717a88;
   }
 `;
 
@@ -13,7 +13,6 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
-      <div>안녕하세요</div>
     </>
   );
 }

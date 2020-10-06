@@ -5,18 +5,31 @@ const HeaderBlock = styled.div`
   width: 100%;
   height: 100px;
   background: #717a88;
+  color: #a5a5a5;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding-left: 25%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 `;
 
-const HeaderButton = styled.div`
-  margin: 40 520 41 360;
-  opacity: 0;
+const NavBar = styled.div`
+  margin-right: 25px;
+  cursor: pointer;
+  &:hover {
+    color: #61d25b;
+  }
 `;
 
 function Header() {
   return (
     <>
       <HeaderBlock>
-        <HeaderButton>ABOUT ME</HeaderButton>
+        <NavBar>ABOUT ME</NavBar>
+        <NavBar>SKILLS</NavBar>
+        <NavBar>PROJECT</NavBar>
+        <NavBar>CAREER</NavBar>
+        <NavBar>CONTACT</NavBar>
       </HeaderBlock>
     </>
   );
