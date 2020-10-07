@@ -1,7 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import Header from './components/Header';
-import AboutMe from './components/AboutMe';
+import AboutMe from './components/AboutMe/AboutMe';
 
 const GlobalStyle = createGlobalStyle`
   body {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
+import AboutMeContents from './AboutMeContents';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 h1 {
   font-size: 4rem;
   color: white;
-  font-weight: 800;
+  font-weight: 900;
   padding-left: 25%;
 }
 
@@ -21,6 +22,7 @@ h2 {
   color: white;
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 
 span {
@@ -39,6 +41,9 @@ const AboutMeBlock = styled.div`
   background: #353b4e;
   margin: 0 auto;
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 function AboutMe() {
@@ -48,12 +53,14 @@ function AboutMe() {
       <h1>
         I<span className="dash">'</span> M<br />
         A FRONT - END <br />
-        DEVELOPER.
+        DEVELOPER<span className="dash">.</span>
       </h1>
       <h2>
         <span>01</span>ABOUT ME
       </h2>
-      <AboutMeBlock></AboutMeBlock>
+      <AboutMeBlock>
+        <AboutMeContents />
+      </AboutMeBlock>
     </>
   );
 }
