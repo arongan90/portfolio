@@ -17,7 +17,7 @@ h1 {
   padding-left: 25%;
 }
 
-h2 {
+p {
   font-size: 3rem;
   color: white;
   display: flex;
@@ -55,9 +55,9 @@ function AboutMe() {
         A FRONT - END <br />
         DEVELOPER<span className="dash">.</span>
       </h1>
-      <h2>
+      <p>
         <span>01</span>ABOUT ME
-      </h2>
+      </p>
       <AboutMeBlock>
         <AboutMeContents />
       </AboutMeBlock>

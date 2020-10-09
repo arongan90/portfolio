@@ -6,6 +6,7 @@ const HeaderBlock = styled.div`
   background: #717a88;
   color: #a5a5a5;
   font-size: 1rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
   padding-left: 25%;
