@@ -1,6 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import MyProfile from './MyProfile';
+import Keyword from './Keyword';
+import donghan from '../../image/donghan.jpeg';
+
+const Image = styled.img`
+  width: 200px;
+  height: 250px;
+  margin: 25px 25px;
+`;
 
 const IntroText = styled.text`
   color: white;
@@ -24,6 +31,7 @@ const OutLine = styled.div`
   height: 300px;
   border: 1px solid #717a88;
   margin: 20px 350px 40px;
+  position: relative;
 `;
 
 function AboutMeContents() {
@@ -33,7 +41,8 @@ function AboutMeContents() {
         <h2>성실하고 바른 인성을 가진 '박동한'입니다.</h2>
         <h5>사람을 좋아하고, 커뮤니케이션에 능한 개발자</h5>
         <OutLine>
-          <MyProfile />
+          <Image src={donghan} />
+          <Keyword />
         </OutLine>
       </IntroText>
     </>
