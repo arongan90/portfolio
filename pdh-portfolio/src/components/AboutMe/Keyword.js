@@ -1,6 +1,10 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
+const position = {
+  A: { left: '-350px', top: '40px' },
+};
+
 const KeywordText = styled.span`
   display: block;
   width: 300px;
@@ -8,12 +12,13 @@ const KeywordText = styled.span`
   color: white;
   text-align: right;
   position: absolute;
-  left: -350px;
-  top: 30px;
   font-size: 0.875rem;
   b {
     font-size: 1rem;
   }
+
+  left: -350px;
+  top: 45px;
 `;
 
 const KeywordIcon = styled.div`
@@ -25,15 +30,16 @@ const KeywordIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 2;
+  line-height: 1.8;
   position: absolute;
-  left: -30px;
-  top: 35px;
+
+  left: -25px;
+  top: 50px;
 
   ${props => props.position && css``}
 `;
 
-function Keyword() {
+function Keyword({ position }) {
   return (
     <>
       <KeywordText>
@@ -45,9 +51,9 @@ function Keyword() {
         성실성과 책임감을 배우게 되었습니다
       </KeywordText>
       <KeywordIcon>Keyword A</KeywordIcon>
-      {/* <Keyword>Keyword B</Keyword> */}
-      {/* <Keyword>Keyword C</Keyword>
-      <Keyword>Keyword D</Keyword> */}
+      <KeywordIcon>Keyword B</KeywordIcon>
+      <KeywordIcon>Keyword C</KeywordIcon>
+      <KeywordIcon>Keyword D</KeywordIcon>
     </>
   );
 }
