@@ -1,8 +1,18 @@
 import React from 'react';
-import styled, { createGlobalStyle, css } from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const SkillsBlock = styled.div`
+  width: 100%;
+  height: 1000px;
+  background: #444751;
+`;
 
 function Skills() {
-  return <div></div>;
+  return (
+    <>
+      <SkillsBlock />
+    </>
+  );
 }
 
 export default Skills;

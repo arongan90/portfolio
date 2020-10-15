@@ -44,6 +44,7 @@ const KeywordText = styled.span`
   font-size: 0.875rem;
   b {
     font-size: 1rem;
+    line-height: 1.5rem;
   }
   ${TextAlign}
   ${TextPosition}

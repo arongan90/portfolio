@@ -1,37 +1,28 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import AboutMeContents from './AboutMeContents';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    background: #717a88;
-    font-family: nanum-gothic;
-    width: 100%;
-    height: 1000px;
+const AboutMeGlobalStyle = styled.div`
+  h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 900;
+    padding-left: 25%;
   }
-h1 {
-  font-size: 4rem;
-  color: white;
-  font-weight: 900;
-  padding-left: 25%;
-}
-
-p {
-  font-size: 3rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-}
-
-span {
-  color: #959daa;
-  margin-right: 15px;
-}
-
-.dash {
-  color: #61d25b;
-}
+  p {
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .number {
+    color: #959daa;
+    margin-right: 15px;
+  }
+  .dash {
+    color: #61d25b;
+  }
 `;
 
 const AboutMeBlock = styled.div`
@@ -47,20 +38,19 @@ const AboutMeBlock = styled.div`
 
 function AboutMe() {
   return (
-    <>
-      <GlobalStyle />
+    <AboutMeGlobalStyle>
       <h1>
         I<span className="dash">'</span> M<br />
         A FRONT - END <br />
         DEVELOPER<span className="dash">.</span>
       </h1>
       <p>
-        <span>01</span>ABOUT ME
+        <span className="number">01</span>ABOUT ME
       </p>
       <AboutMeBlock>
         <AboutMeContents />
       </AboutMeBlock>
-    </>
+    </AboutMeGlobalStyle>
   );
 }
 

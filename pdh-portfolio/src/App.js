@@ -2,10 +2,13 @@ import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe/AboutMe';
+import Skills from './components/Skills/Skills';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background: gray;
+    background: #717a88;
+    font-family: nanum-gothic;
+    width: 100%;
   }
 `;
 
@@ -15,6 +18,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <AboutMe />
+      <Skills />
     </>
   );
 }

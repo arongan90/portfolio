@@ -9,7 +9,7 @@ const Image = styled.img`
   margin: 25px 25px;
 `;
 
-const IntroText = styled.text`
+const AboutMeContentsText = styled.text`
   color: white;
   text-align: center;
   h2 {
@@ -17,7 +17,7 @@ const IntroText = styled.text`
     font-weight: 600;
     margin-top: 60px;
     margin-bottom: 8px;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
   }
   h5 {
     font-size: 28px;
@@ -37,7 +37,7 @@ const OutLine = styled.div`
 function AboutMeContents() {
   return (
     <>
-      <IntroText>
+      <AboutMeContentsText>
         <h2>성실하고 바른 인성을 가진 '박동한'입니다.</h2>
         <h5>사람을 좋아하고, 커뮤니케이션에 능한 개발자</h5>
         <OutLine>
@@ -78,7 +78,7 @@ function AboutMeContents() {
             원만한 소통 및 대인관계를 유지하고 있습니다
           </Keyword>
         </OutLine>
-      </IntroText>
+      </AboutMeContentsText>
     </>
   );
 }
