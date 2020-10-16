@@ -61,8 +61,7 @@ const KeywordIcon = styled.div`
   align-items: center;
   line-height: 1.8;
   position: absolute;
-  ${IconPosition}/* left: -25px;
-  top: 50px; */
+  ${IconPosition}
 `;
 
 function Keyword({ icon, children, position, align }) {

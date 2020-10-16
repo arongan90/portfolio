@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Keyword from './Keyword';
-import donghan from '../../image/donghan.jpeg';
+import Donghan from '../../image/donghan.jpeg';
 
 const Image = styled.img`
   width: 200px;
@@ -41,8 +41,8 @@ function AboutMeContents() {
         <h2>성실하고 바른 인성을 가진 '박동한'입니다.</h2>
         <h5>사람을 좋아하고, 커뮤니케이션에 능한 개발자</h5>
         <OutLine>
-          <Image src={donghan} />
-          <Keyword icon={'Keyword A'} position={'A'} align={'right'}>
+          <Image src={Donghan} />
+          <Keyword icon="Keyword A" position="A" align="right">
             <b>성실함과 책임감</b>
             <br />
             임원수행직 및 현금호송보안업의 경험으로
@@ -50,7 +50,7 @@ function AboutMeContents() {
             사회생활에서 제일 중요한 <br />
             성실성과 책임감을 배우게 되었습니다
           </Keyword>
-          <Keyword icon={'Keyword B'} position={'B'} align={'left'}>
+          <Keyword icon="Keyword B" position="B" align="left">
             <b>예의와 바른 인성</b>
             <br />
             예의범절을 중요하게 생각하시는
@@ -59,7 +59,7 @@ function AboutMeContents() {
             <br />
             저를 가장 잘 표현하는 단어입니다
           </Keyword>
-          <Keyword icon={'Keyword C'} position={'C'} align={'right'}>
+          <Keyword icon="Keyword C" position="C" align="right">
             <b>도전 정신</b>
             <br />
             새로운 것을 배우는데, 거부감이 없으며
@@ -68,7 +68,7 @@ function AboutMeContents() {
             <br />
             무엇이든 도전하고 경험하는 것을 즐겨합니다
           </Keyword>
-          <Keyword icon={'Keyword D'} position={'D'} align={'left'}>
+          <Keyword icon="Keyword D" position="D" align="left">
             <b>소통을 즐기는 개발자</b>
             <br />
             동네강아지 같다는 말을 자주 들을만큼 사람을
