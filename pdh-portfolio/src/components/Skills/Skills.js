@@ -20,17 +20,14 @@ const SkillsBlock = styled.div`
     color: #959daa;
     margin-right: 15px;
   }
-
-  .skill {
-    color: white;
-    font-size: 2rem;
-    text-align: right;
-  }
 `;
 
 const SkillContents = styled.div`
   display: flex;
   flex-direction: column;
+  width: 810px;
+  margin: 0 auto;
+  margin-top: 70px;
 `;
 
 const SkillBar = styled.div`
@@ -48,7 +45,11 @@ function Skills() {
       </p>
       <SkillContents>
         <StickChart title="HTML" percentBar="80" percentNumber="80" />
-        <StickChart title="HTML" percentBar="60" percentNumber="60" />
+        <StickChart title="CSS" percentBar="60" percentNumber="60" />
+        <StickChart title="Java Script" percentBar="60" percentNumber="60" />
+        <StickChart title="React" percentBar="60" percentNumber="60" />
+        <StickChart title="JSP" percentBar="60" percentNumber="60" />
+        <StickChart title="Adobe XD" percentBar="60" percentNumber="60" />
       </SkillContents>
     </SkillsBlock>
   );

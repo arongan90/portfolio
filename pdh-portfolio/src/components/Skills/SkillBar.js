@@ -5,17 +5,19 @@ const Box = styled.div`
   display: flex;
   flex: 1;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-beetween;
+  background: red;
 `;
 const Title = styled.span`
   font-size: 2rem;
   color: #bfc6d3;
   margin-right: 30px;
+  text-align: right;
 `;
 const StickBox = styled.div`
   display: flex;
   background-color: #444751;
-  width: 100%;
+  width: 60%;
   height: 25px;
 `;
 const StickColor = styled.div`
