@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe/AboutMe';
 import Skills from './components/Skills/Skills';
+import Project from './components/Project/Project';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <AboutMe />
       <Skills />
+      <Project />
     </>
   );
 }

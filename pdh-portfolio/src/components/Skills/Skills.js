@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import StickChart from './SkillBar';
+import SkillBar from './SkillBar';
 
 const SkillsBlock = styled.div`
   width: 100%;
@@ -30,11 +30,11 @@ const SkillContents = styled.div`
   margin-top: 70px;
 `;
 
-const SkillBar = styled.div`
-  width: 480px;
-  height: 25px;
-  background: #61d25b;
-  margin: 20px;
+const AddExplain = styled.span`
+  font-size: 1.5rem;
+  color: white;
+  margin: 0 auto;
+  margin-top: 50px;
 `;
 
 function Skills() {
@@ -44,13 +44,47 @@ function Skills() {
         <span className="number">02</span>SKILLS
       </p>
       <SkillContents>
-        <StickChart title="HTML" percentBar="80" percentNumber="80" />
-        <StickChart title="CSS" percentBar="60" percentNumber="60" />
-        <StickChart title="Java Script" percentBar="60" percentNumber="60" />
-        <StickChart title="React" percentBar="60" percentNumber="60" />
-        <StickChart title="JSP" percentBar="60" percentNumber="60" />
-        <StickChart title="Adobe XD" percentBar="60" percentNumber="60" />
+        <SkillBar
+          title="HTML"
+          percentBar="80"
+          percentNumber="80"
+          explain="HTML 문법 이해 및 태그 속성 활용 가능"
+        />
+        <SkillBar
+          title="CSS"
+          percentBar="80"
+          percentNumber="80"
+          explain="CSS 및 SCSS 스타일링 활용 가능"
+        />
+        <SkillBar
+          title="Java Script"
+          percentBar="75"
+          percentNumber="75"
+          explain="ES6 문법 이해 및 JQuery 활용 가능"
+        />
+        <SkillBar
+          title="React"
+          percentBar="70"
+          percentNumber="70"
+          explain="Styled-Component 및 Redux-Middleware 활용가능"
+        />
+        <SkillBar
+          title="JSP"
+          percentBar="60"
+          percentNumber="60"
+          explain="모델 1, 2 이해 및 MVC 패턴 활용 가능"
+        />
+        <SkillBar
+          title="Adobe XD"
+          percentBar="75"
+          percentNumber="75"
+          explain="기본적인 디자인 툴 활용 가능"
+        />
       </SkillContents>
+      <AddExplain>
+        이 외에도 IT 훈련기관을 통하여 Java, Oracle, Spring 등 웹의 전반적인
+        흐름을 경험하였습니다
+      </AddExplain>
     </SkillsBlock>
   );
 }
