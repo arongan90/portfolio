@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     background: #717a88;
     font-family: nanum-gothic;
     width: 100%;
+    margin: 0;
   }
 `;
 
