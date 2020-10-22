@@ -1,31 +1,31 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-const TextPositionStyles = {
+const TextPosition = {
   A: { left: '-350px', top: '40px' },
   B: { left: '350px', top: '40px' },
   C: { left: '-350px', top: '195px' },
   D: { left: '350px', top: '195px' },
 };
 
-const IconPositionStyles = {
+const IconPosition = {
   A: { left: '-25px', top: '50px' },
   B: { left: '275px', top: '50px' },
   C: { left: '-25px', top: '200px' },
   D: { left: '275px', top: '200px' },
 };
 
-const TextPosition = css`
+const TextStyle = css`
   ${({ position }) => css`
-    top: ${TextPositionStyles[position].top};
-    left: ${TextPositionStyles[position].left};
+    top: ${TextPosition[position].top};
+    left: ${TextPosition[position].left};
   `}
 `;
 
-const IconPosition = css`
+const IconStyle = css`
   ${({ position }) => css`
-    top: ${IconPositionStyles[position].top};
-    left: ${IconPositionStyles[position].left};
+    top: ${IconPosition[position].top};
+    left: ${IconPosition[position].left};
   `}
 `;
 
@@ -47,7 +47,7 @@ const KeywordText = styled.span`
     line-height: 1.5rem;
   }
   ${TextAlign}
-  ${TextPosition}
+  ${TextStyle}
 `;
 
 const KeywordIcon = styled.div`
@@ -61,7 +61,7 @@ const KeywordIcon = styled.div`
   align-items: center;
   line-height: 1.8;
   position: absolute;
-  ${IconPosition}
+  ${IconStyle}
 `;
 
 function Keyword({ icon, children, position, align }) {

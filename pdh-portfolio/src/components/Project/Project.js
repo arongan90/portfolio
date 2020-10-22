@@ -36,6 +36,7 @@ const ProjectLink = styled.img`
   width: 250px;
   height: 250px;
   border: solid 1px #4e5365;
+  cursor: pointer;
 `;
 
 function Project() {

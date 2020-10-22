@@ -4,6 +4,8 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe/AboutMe';
 import Skills from './components/Skills/Skills';
 import Project from './components/Project/Project';
+import Career from './components/Career/Career';
+import Contact from './components/Contact/Contact';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -22,6 +24,8 @@ function App() {
       <AboutMe />
       <Skills />
       <Project />
+      <Career />
+      <Contact />
     </>
   );
 }
