@@ -1,27 +1,29 @@
 import React from 'react';
-import styled from 'styled-components';
-import Explanation from './Explanation';
+import styled, { createGlobalStyle } from 'styled-components';
+import WorkPage1 from './Component/WorkPage1';
+import WorkPage2 from './Component/WorkPage2';
+import WorkPage3 from './Component/WorkPage3';
+import WorkPage4 from './Component/WorkPage4';
 
-const WorkBlock = styled.div`
-  width: 100%;
-  height: 1000px;
-  background: #4e5365;
-  display: flex;
-`;
-const Image = styled.img`
-  display: flex;
-  flex-direction: column;
-  width: 750px;
-  height: 400px;
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: #717a88;
+    font-family: nanum-gothic;
+    width: 100%;
+    margin: 0;
+
+  }
 `;
 
 function Work() {
   return (
-    <WorkBlock>
-      <Explanation />
-      <Image></Image>
-      <Image></Image>
-    </WorkBlock>
+    <>
+      <GlobalStyle />
+      <WorkPage1 />
+      <WorkPage2 />
+      <WorkPage3 />
+      <WorkPage4 />
+    </>
   );
 }
 

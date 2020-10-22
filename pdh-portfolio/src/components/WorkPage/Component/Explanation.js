@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ExplanBlock = styled.div`
-  width: 300px;
-  height: 500px;
+  height: 850px;
   box-sizing: border-box;
   color: white;
   h1 {
     font-size: 3rem;
   }
+  position: absolute;
+  left: 10%;
 `;
 
 const Line = styled.div`

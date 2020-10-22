@@ -10,7 +10,7 @@ import Work from './components/WorkPage/Work';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background: #717a88;
+    /* background: #717a88; */
     font-family: nanum-gothic;
     width: 100%;
     margin: 0;
