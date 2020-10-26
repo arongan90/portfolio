@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
+import main from '../../../image/main.png';
 
 const WorkBlock = styled.div`
   width: 100%;
@@ -26,7 +27,7 @@ function WorkPage1() {
     <WorkBlock>
       <Explanation />
       <div className="img">
-        <Image></Image>
+        <Image src={main}></Image>
         <Image></Image>
       </div>
     </WorkBlock>

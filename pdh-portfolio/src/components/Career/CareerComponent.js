@@ -2,10 +2,10 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 const CareerPosition = {
-  first: { left: '-265px' },
-  second: { left: '65px' },
-  third: { left: '-265px' },
-  fourth: { left: '65px' },
+  first: { left: '-290px' },
+  second: { left: '50px' },
+  third: { left: '-290px' },
+  fourth: { left: '50px' },
 };
 
 const CareerStyle = css`
@@ -34,7 +34,7 @@ const Circle = styled.div`
 `;
 
 const Explain = styled.div`
-  width: 215px;
+  width: 250px;
   height: 200px;
   color: white;
   .title {
@@ -53,7 +53,14 @@ function CareerComponent({ title, explain, position, align }) {
       <Circle>
         <Explain position={position} align={align}>
           <div className="title">{title}</div>
-          <div>{explain}</div>
+          {explain.split('<br />').map(line => {
+            return (
+              <div>
+                {line}
+                <br />
+              </div>
+            );
+          })}
         </Explain>
       </Circle>
       <Line />
