@@ -1,5 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Route, Link } from 'react-router-dom';
+import AboutMe from './AboutMe/AboutMe';
+import Skills from './Skills/Skills';
+import Project from './Project/Project';
+import Career from './Career/Career';
+import Contact from './Contact/Contact';
 
 const HeaderBlock = styled.div`
   height: 100px;
@@ -11,13 +17,15 @@ const HeaderBlock = styled.div`
   align-items: center;
   padding-left: 25%;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-`;
 
-const NavBar = styled.div`
-  margin-right: 25px;
-  cursor: pointer;
-  &:hover {
-    color: #61d25b;
+  .NavBar {
+    text-decoration: none;
+    margin-right: 25px;
+    cursor: pointer;
+    color: #a5a5a5;
+    &:hover {
+      color: #61d25b;
+    }
   }
 `;
 
@@ -25,12 +33,27 @@ function Header() {
   return (
     <>
       <HeaderBlock>
-        <NavBar>ABOUT ME</NavBar>
-        <NavBar>SKILLS</NavBar>
-        <NavBar>PROJECT</NavBar>
-        <NavBar>CAREER</NavBar>
-        <NavBar>CONTACT</NavBar>
+        <Link to="/about" className="NavBar">
+          ABOUT ME
+        </Link>
+        <Link to="/skills" className="NavBar">
+          SKILLS
+        </Link>
+        <Link to="/project" className="NavBar">
+          PROJECT
+        </Link>
+        <Link to="/career" className="NavBar">
+          CAREER
+        </Link>
+        <Link to="/contact" className="NavBar">
+          CONTACT
+        </Link>
       </HeaderBlock>
+      <Route path="/about" component={AboutMe} />
+      <Route path="/skills" component={Skills} />
+      <Route path="/project" component={Project} />
+      <Route path="/career" component={Career} />
+      <Route path="/contact" component={Contact} />
     </>
   );
 }
