@@ -38,7 +38,7 @@ const AboutMeBlock = styled.div`
 
 function AboutMe() {
   return (
-    <AboutMeGlobalStyle>
+    <AboutMeGlobalStyle id="about">
       <h1>
         I<span className="dash">'</span> M<br />
         A FRONT - END <br />

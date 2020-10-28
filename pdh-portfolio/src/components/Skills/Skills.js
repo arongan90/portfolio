@@ -39,7 +39,7 @@ const AddExplain = styled.span`
 
 function Skills() {
   return (
-    <SkillsBlock>
+    <SkillsBlock id="skills">
       <p>
         <span className="number">02</span>SKILLS
       </p>

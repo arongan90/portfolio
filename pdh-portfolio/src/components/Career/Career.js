@@ -25,7 +25,7 @@ const CareerBlock = styled.div`
 
 function Career() {
   return (
-    <CareerBlock>
+    <CareerBlock id="career">
       <p>
         <span className="number">04</span>CAREER
       </p>

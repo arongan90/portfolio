@@ -38,7 +38,7 @@ function AboutMeContents() {
   return (
     <>
       <AboutMeContentsText>
-        <h2>성실하고 바른 인성을 가진 '박동한'입니다.</h2>
+        <h2>성실하고 바른 인성을 가진 '박동한' 입니다.</h2>
         <h5>사람을 좋아하고, 커뮤니케이션에 능한 개발자</h5>
         <OutLine>
           <Image src={Donghan} />

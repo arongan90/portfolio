@@ -44,7 +44,7 @@ const ContactContent = styled.div`
 
 function Contact() {
   return (
-    <ContactBlock>
+    <ContactBlock id="contact">
       <ContactContent>
         <p>
           <span className="number">05</span>CONTACT

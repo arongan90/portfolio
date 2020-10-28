@@ -42,7 +42,7 @@ const ProjectLink = styled.img`
 function Project() {
   return (
     <>
-      <ProjectBlock>
+      <ProjectBlock id="project">
         <p>
           <span className="number">03</span>PROJECT
         </p>
