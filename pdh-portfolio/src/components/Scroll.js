@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 import { AiOutlineUp } from 'react-icons/ai';
 
@@ -8,7 +8,7 @@ const IconButton = styled.button`
   border-radius: 50%;
   background: #353b4e;
   position: fixed;
-  bottom: 100px;
+  bottom: 5vh;
   right: 5%;
   color: white;
   display: flex;
@@ -21,18 +21,23 @@ const IconButton = styled.button`
   z-index: 1;
   &:hover {
     background: lightgray;
+    color: #353b4e;
   }
 `;
 
 function Scroll({ showBelow }) {
   const [show, setShow] = useState(showBelow ? false : true);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (window.pageYOffset > showBelow) {
       if (!show) setShow(true);
     } else {
       if (show) setShow(false);
     }
+  }, [show, showBelow]);
+
+  const handleClick = () => {
+    window[`scrollTo`]({ top: 0, behavior: `smooth` });
   };
 
   useEffect(() => {
@@ -40,11 +45,8 @@ function Scroll({ showBelow }) {
       window.addEventListener(`scroll`, handleScroll);
       return () => window.removeEventListener(`scroll`, handleScroll);
     }
-  }, []);
+  }, [showBelow, handleScroll]);
 
-  const handleClick = () => {
-    window[`scrollTo`]({ top: 0, behavior: `smooth` });
-  };
   return (
     <>
       {show && (

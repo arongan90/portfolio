@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import WorkPage1 from './Component/WorkPage1';
 import WorkPage2 from './Component/WorkPage2';
 import WorkPage3 from './Component/WorkPage3';
@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: nanum-gothic;
     width: 100%;
     margin: 0;
-
   }
 `;
 

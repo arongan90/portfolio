@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const HeaderBlock = styled.div`
@@ -23,9 +23,6 @@ const HeaderBlock = styled.div`
 `;
 
 function Header() {
-  const onClick = e => {
-    e.preventDefault();
-  };
   return (
     <>
       <HeaderBlock>
