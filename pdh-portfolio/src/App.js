@@ -7,6 +7,7 @@ import Project from './components/Project/Project';
 import Career from './components/Career/Career';
 import Contact from './components/Contact/Contact';
 import Work from './components/WorkPage/Work';
+import Scroll from './components/Scroll';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -27,6 +28,7 @@ function App() {
       <Project />
       <Career />
       <Contact />
+      <Scroll showBelow={250} />
       <Work />
     </>
   );

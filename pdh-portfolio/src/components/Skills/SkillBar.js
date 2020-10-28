@@ -27,6 +27,7 @@ const StickColor = styled.div`
   display: flex;
   background-color: #61d25b;
   width: ${props => props.percent}%;
+  transition: 1s;
 `;
 const Number = styled.span`
   font-size: 2rem;
