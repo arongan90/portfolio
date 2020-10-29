@@ -10,7 +10,7 @@ const HeaderBlock = styled.div`
   display: flex;
   align-items: center;
   padding-left: 25%;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
   a {
     text-decoration: none;
     margin-right: 25px;

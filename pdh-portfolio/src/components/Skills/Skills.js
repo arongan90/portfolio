@@ -7,7 +7,7 @@ const SkillsBlock = styled.div`
   height: 1000px;
   display: flex;
   flex-direction: column;
-  background: #444751;
+  background: linear-gradient(to bottom, #444751, 95%, #4e5365);
   padding-top: 180px;
   box-sizing: border-box;
   p {
@@ -49,36 +49,42 @@ function Skills() {
           percentBar="80"
           percentNumber="80"
           explain="HTML 문법 이해 및 태그 속성 활용 가능"
+          durationTime="1"
         />
         <SkillBar
           title="CSS"
           percentBar="80"
           percentNumber="80"
           explain="CSS 및 SCSS 스타일링 활용 가능"
+          durationTime="1.3"
         />
         <SkillBar
           title="Java Script"
           percentBar="75"
           percentNumber="75"
           explain="ES6 문법 이해 및 JQuery 활용 가능"
+          durationTime="1.6"
         />
         <SkillBar
           title="React"
           percentBar="70"
           percentNumber="70"
           explain="Styled-Component 및 Redux-Middleware 활용가능"
+          durationTime="1.9"
         />
         <SkillBar
           title="JSP"
           percentBar="60"
           percentNumber="60"
           explain="모델 1, 2 이해 및 MVC 패턴 활용 가능"
+          durationTime="2.2"
         />
         <SkillBar
           title="Adobe XD"
           percentBar="75"
           percentNumber="75"
           explain="기본적인 디자인 툴 활용 가능"
+          durationTime="2.5"
         />
       </SkillContents>
       <AddExplain>

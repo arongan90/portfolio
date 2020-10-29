@@ -39,13 +39,16 @@ const KeywordText = styled.span`
   display: block;
   width: 300px;
   height: 80px;
-  color: white;
+  color: lightgray;
   position: absolute;
   font-size: 0.875rem;
   b {
     font-size: 1rem;
     line-height: 1.5rem;
+    color: white;
+    word-spacing: 2px;
   }
+  letter-spacing: 1px;
   ${TextAlign}
   ${TextStyle}
 `;

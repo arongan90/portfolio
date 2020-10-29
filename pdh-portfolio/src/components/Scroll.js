@@ -19,9 +19,11 @@ const IconButton = styled.button`
   outline: 0;
   font-weight: bold;
   z-index: 1;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.5);
   &:hover {
     background: lightgray;
     color: #353b4e;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.5);
   }
 `;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import AboutMeContents from './AboutMeContents';
 
-const AboutMeGlobalStyle = styled.div`
+const AboutMeBlock = styled.div`
   h1 {
     font-size: 4rem;
     color: white;
@@ -23,9 +23,12 @@ const AboutMeGlobalStyle = styled.div`
   .dash {
     color: #61d25b;
   }
+  background: linear-gradient(to bottom, #717a88, 55%, #444751);
+  width: 100%;
+  height: 1000px;
 `;
 
-const AboutMeBlock = styled.div`
+const AboutMeContentsBlock = styled.div`
   width: 1000px;
   height: 500px;
   background: #353b4e;
@@ -34,11 +37,12 @@ const AboutMeBlock = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 `;
 
 function AboutMe() {
   return (
-    <AboutMeGlobalStyle id="about">
+    <AboutMeBlock id="about">
       <h1>
         I<span className="dash">'</span> M<br />
         A FRONT - END <br />
@@ -47,10 +51,10 @@ function AboutMe() {
       <p>
         <span className="number">01</span>ABOUT ME
       </p>
-      <AboutMeBlock>
+      <AboutMeContentsBlock>
         <AboutMeContents />
-      </AboutMeBlock>
-    </AboutMeGlobalStyle>
+      </AboutMeContentsBlock>
+    </AboutMeBlock>
   );
 }
 

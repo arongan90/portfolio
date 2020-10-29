@@ -10,7 +10,7 @@ const Image = styled.img`
 `;
 
 const AboutMeContentsText = styled.text`
-  color: white;
+  color: lightgray;
   text-align: center;
   h2 {
     font-size: 32px;
@@ -18,6 +18,7 @@ const AboutMeContentsText = styled.text`
     margin-top: 60px;
     margin-bottom: 8px;
     letter-spacing: 7px;
+    color: white;
   }
   h5 {
     font-size: 28px;
