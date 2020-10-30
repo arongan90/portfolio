@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
 import main from '../../../image/main.png';
+import product from '../../../image/product.png';
 
 const WorkBlock = styled.div`
   width: 100%;
@@ -27,8 +28,8 @@ function WorkPage1() {
     <WorkBlock>
       <Explanation />
       <div className="img">
+        <Image src={product}></Image>
         <Image src={main}></Image>
-        <Image></Image>
       </div>
     </WorkBlock>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import useScrollHook from '../../hooks/useScrollHook';
 
 const slideBar = keyframes`
   from {
@@ -32,6 +33,7 @@ const StickBox = styled.div`
   height: 20px;
   margin-right: 5px;
 `;
+
 const StickColor = styled.div`
   display: flex;
   background-color: #61d25b;
@@ -55,11 +57,12 @@ const Explain = styled.span`
 function SkillBar({ title, percentNumber, percentBar, explain, durationTime }) {
   const propPercent = parseInt(percentBar);
   const propDuration = parseFloat(durationTime);
+  const slideAnimation = useScrollHook();
   return (
     <>
       <Box>
         <Title>{title}</Title>
-        <StickBox>
+        <StickBox {...slideAnimation} className={slideAnimation && 'style'}>
           <StickColor percent={propPercent} duration={propDuration} />
         </StickBox>
         <Number>{percentNumber}%</Number>
