@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import restful from '../../../image/restful.png';
-import jquery from '../../../image/jquery.png';
+import restful from '../../image/restful.png';
+import jquery from '../../image/jquery.png';
 
 const WorkBlock = styled.div`
   width: 100%;
@@ -21,9 +21,10 @@ const Image = styled.img`
   width: 450px;
   height: 700px;
   margin-right: 50px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
 `;
 
-function WorkPage5() {
+function WorkPage6() {
   return (
     <WorkBlock>
       <Explanation
@@ -43,4 +44,4 @@ function WorkPage5() {
   );
 }
 
-export default WorkPage5;
+export default WorkPage6;

@@ -7,7 +7,7 @@ import portfolio from '../../image/portfolio.png';
 const ProjectBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: #4e5365;
+  background: linear-gradient(to bottom, #4e5365, 80%, #5a5f70);
   display: flex;
   flex-direction: column;
   justify-content: center;

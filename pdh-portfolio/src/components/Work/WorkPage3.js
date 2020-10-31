@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import main from '../../../image/main.png';
+import main from '../../image/main.png';
 
 const WorkBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: #717a88;
+  background: linear-gradient(to bottom, #717a88, 95%, #4e5365);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -17,10 +17,11 @@ const WorkBlock = styled.div`
   }
 `;
 const Image = styled.img`
-  display: flex;
-  flex-direction: column;
   width: 850px;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
 `;
 
 function WorkPage3() {

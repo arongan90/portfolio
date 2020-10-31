@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import project from '../../../image/project.png';
-import projectmodify from '../../../image/projectmodify.png';
+import project from '../../image/project.png';
+import projectmodify from '../../image/projectmodify.png';
 
 const WorkBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: #4e5365;
+  background: linear-gradient(to bottom, #4e5365, 95%, #808895);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -22,7 +22,8 @@ const WorkBlock = styled.div`
 const Image = styled.img`
   display: flex;
   width: 750px;
-  height: 400px;
+  height: 430px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
   & + & {
     margin: 30px 0 0;
   }

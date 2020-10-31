@@ -1,10 +1,10 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import WorkPage1 from './workPage/WorkPage1';
-import WorkPage2 from './workPage/WorkPage2';
-import WorkPage3 from './workPage/WorkPage3';
-import WorkPage4 from './workPage/WorkPage4';
-import WorkPage5 from './workPage/WorkPage5';
+import WorkPage1 from './WorkPage1';
+import WorkPage2 from './WorkPage2';
+import WorkPage3 from './WorkPage3';
+import WorkPage4 from './WorkPage4';
+import WorkPage5 from './WorkPage5';
 
 const GlobalStyle = createGlobalStyle`
   body {
