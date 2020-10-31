@@ -6,7 +6,7 @@ import Skills from './components/Skills/Skills';
 import Project from './components/Project/Project';
 import Career from './components/Career/Career';
 import Contact from './components/Contact/Contact';
-import Work from './components/WorkPage/Work';
+import Work from './components/Work/Work';
 import Scroll from './components/Scroll';
 
 const GlobalStyle = createGlobalStyle`

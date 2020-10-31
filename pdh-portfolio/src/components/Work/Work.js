@@ -1,9 +1,10 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import WorkPage1 from './Component/WorkPage1';
-import WorkPage2 from './Component/WorkPage2';
-import WorkPage3 from './Component/WorkPage3';
-import WorkPage4 from './Component/WorkPage4';
+import WorkPage1 from './workPage/WorkPage1';
+import WorkPage2 from './workPage/WorkPage2';
+import WorkPage3 from './workPage/WorkPage3';
+import WorkPage4 from './workPage/WorkPage4';
+import WorkPage5 from './workPage/WorkPage5';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -22,6 +23,7 @@ function Work() {
       <WorkPage2 />
       <WorkPage3 />
       <WorkPage4 />
+      <WorkPage5 />
     </>
   );
 }

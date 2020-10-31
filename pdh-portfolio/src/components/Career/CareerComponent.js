@@ -53,7 +53,7 @@ function CareerComponent({ title, explain, position, align }) {
       <Circle>
         <Explain position={position} align={align}>
           <div className="title">{title}</div>
-          {explain.split('<br />').map(line => {
+          {explain.split('/n').map(line => {
             return (
               <div>
                 {line}
