@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Route, Link } from 'react-router-dom';
 import geist from '../../image/geist.png';
 import foodfesta from '../../image/foodfesta.png';
 import portfolio from '../../image/portfolio.png';
@@ -32,7 +33,7 @@ const ProjectBox = styled.div`
   display: flex;
 `;
 
-const ProjectLink = styled.img`
+const LinkToProject = styled.img`
   width: 250px;
   height: 250px;
   border: solid 1px #4e5365;
@@ -47,9 +48,11 @@ function Project() {
           <span className="number">03</span>PROJECT
         </p>
         <ProjectBox>
-          <ProjectLink src={geist}></ProjectLink>
-          <ProjectLink src={foodfesta}></ProjectLink>
-          <ProjectLink src={portfolio}></ProjectLink>
+          <Link to="/geist">
+            <LinkToProject src={geist}></LinkToProject>
+          </Link>
+          <LinkToProject src={foodfesta}></LinkToProject>
+          <LinkToProject src={portfolio}></LinkToProject>
         </ProjectBox>
       </ProjectBlock>
     </>

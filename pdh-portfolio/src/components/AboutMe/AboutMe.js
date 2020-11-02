@@ -3,10 +3,14 @@ import styled from 'styled-components';
 import AboutMeContents from './AboutMeContents';
 
 const AboutMeBlock = styled.div`
+  width: 100%;
+  background: linear-gradient(to bottom, #717a88, 55%, #444751);
   h1 {
+    display: inline-block;
     font-size: 4rem;
     color: white;
     font-weight: 900;
+    margin-top: 65px 0 0 0;
     padding-left: 25%;
   }
   p {
@@ -23,9 +27,6 @@ const AboutMeBlock = styled.div`
   .dash {
     color: #61d25b;
   }
-  background: linear-gradient(to bottom, #717a88, 55%, #444751);
-  width: 100%;
-  height: 1000px;
 `;
 
 const AboutMeContentsBlock = styled.div`

@@ -7,7 +7,7 @@ const useScrollHook = () => {
     const { current } = dom;
 
     if (entry.isIntersecting) {
-      current.addClassName = 'style';
+      // current.addClassName = 'style';
     }
   }, []);
 

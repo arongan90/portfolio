@@ -1,19 +1,15 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import Header from './components/Header';
-import AboutMe from './components/AboutMe/AboutMe';
-import Skills from './components/Skills/Skills';
-import Project from './components/Project/Project';
-import Career from './components/Career/Career';
-import Contact from './components/Contact/Contact';
-import Work from './components/Work/Work';
-import Scroll from './components/Scroll';
+import { Route } from 'react-router-dom';
+import Home from './components/Home';
+import Work from './components/ProjectLink/Work';
 
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: nanum-gothic;
     width: 100%;
     margin: 0;
+    position: relative;
   }
 `;
 
@@ -21,14 +17,8 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <AboutMe />
-      <Skills />
-      <Project />
-      <Career />
-      <Contact />
-      <Scroll showBelow={250} />
-      <Work />
+      <Route path="/" exact={true} component={Home} />
+      <Route path="/geist" component={Work} />
     </>
   );
 }

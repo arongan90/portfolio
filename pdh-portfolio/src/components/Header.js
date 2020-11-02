@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderBlock = styled.div`
+  position: relative;
+  z-index: 1;
   height: 100px;
   background: #717a88;
   color: #a5a5a5;
