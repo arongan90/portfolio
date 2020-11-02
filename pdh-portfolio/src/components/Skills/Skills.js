@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SkillBar from './SkillBar';
+import useScrollHook from '../../hooks/useScrollHook';
 
 const SkillsBlock = styled.div`
   width: 100%;
@@ -38,53 +39,54 @@ const AddExplain = styled.span`
 `;
 
 function Skills() {
+  const animationScroll = useScrollHook();
   return (
     <SkillsBlock id="skills">
       <p>
         <span className="number">02</span>SKILLS
       </p>
-      <SkillContents>
+      <SkillContents {...animationScroll}>
         <SkillBar
           title="HTML"
           percentBar="80"
           percentNumber="80"
           explain="HTML 문법 이해 및 태그 속성 활용 가능"
-          durationTime="1"
+          durationTime="2"
         />
         <SkillBar
           title="CSS"
           percentBar="80"
           percentNumber="80"
           explain="CSS 및 SCSS 스타일링 활용 가능"
-          durationTime="1.3"
+          durationTime="2.3"
         />
         <SkillBar
           title="Java Script"
           percentBar="75"
           percentNumber="75"
           explain="ES6 문법 이해 및 JQuery 활용 가능"
-          durationTime="1.6"
+          durationTime="2.6"
         />
         <SkillBar
           title="React"
           percentBar="70"
           percentNumber="70"
           explain="Styled-Component 및 Redux-Middleware 활용가능"
-          durationTime="1.9"
+          durationTime="2.9"
         />
         <SkillBar
           title="JSP"
           percentBar="60"
           percentNumber="60"
           explain="모델 1, 2 이해 및 MVC 패턴 활용 가능"
-          durationTime="2.2"
+          durationTime="3.2"
         />
         <SkillBar
           title="Adobe XD"
           percentBar="75"
           percentNumber="75"
           explain="기본적인 디자인 툴 활용 가능"
-          durationTime="2.5"
+          durationTime="3.5"
         />
       </SkillContents>
       <AddExplain>
