@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import geist from '../../image/geist.png';
 import foodfesta from '../../image/foodfesta.png';
 import portfolio from '../../image/portfolio.png';

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 const slideBar = keyframes`
   from {
@@ -9,6 +9,7 @@ const slideBar = keyframes`
     width: ${props => props.percent}%;
   }
 `;
+
 const Box = styled.div`
   display: flex;
   width: 100%;
@@ -36,8 +37,12 @@ const StickBox = styled.div`
 const StickColor = styled.div`
   display: flex;
   background-color: #61d25b;
-  width: ${props => props.percent}%;
-  animation: ${slideBar} ${props => props.duration}s;
+  ${props =>
+    props.visible &&
+    css`
+      width: ${props => props.percent}%;
+      animation: ${slideBar} ${props => props.duration}s;
+    `}
 `;
 const Number = styled.span`
   font-size: 2rem;
@@ -53,7 +58,14 @@ const Explain = styled.span`
   margin-bottom: 1.3rem;
 `;
 
-function SkillBar({ title, percentNumber, percentBar, explain, durationTime }) {
+function SkillBar({
+  title,
+  percentNumber,
+  percentBar,
+  explain,
+  durationTime,
+  visible,
+}) {
   const propPercent = parseInt(percentBar);
   const propDuration = parseFloat(durationTime);
 
@@ -62,7 +74,11 @@ function SkillBar({ title, percentNumber, percentBar, explain, durationTime }) {
       <Box>
         <Title>{title}</Title>
         <StickBox>
-          <StickColor percent={propPercent} duration={propDuration} />
+          <StickColor
+            percent={propPercent}
+            duration={propDuration}
+            visible={visible}
+          />
         </StickBox>
         <Number>{percentNumber}%</Number>
       </Box>
