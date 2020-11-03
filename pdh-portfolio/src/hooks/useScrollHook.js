@@ -3,10 +3,8 @@ import { useRef, useCallback, useEffect, useState } from 'react';
 const useScrollHook = () => {
   const dom = useRef();
   const [visible, setVisible] = useState(false);
-
   const handleScroll = useCallback(([entry]) => {
     // const { current } = dom;
-
     if (entry.isIntersecting) {
       setVisible(true);
       // current.style.transitionProperty = 'opacity transform';
@@ -23,7 +21,7 @@ const useScrollHook = () => {
     const { current } = dom;
 
     if (current) {
-      observer = new IntersectionObserver(handleScroll, { threshold: 0.5 });
+      observer = new IntersectionObserver(handleScroll, { threshold: 0.4 });
       observer.observe(current);
 
       return () => observer && observer.disconnect();

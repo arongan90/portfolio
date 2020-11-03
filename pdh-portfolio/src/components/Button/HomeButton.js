@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { withRouter } from 'react-router-dom';
 import { BsFillHouseDoorFill } from 'react-icons/bs';
 
 const IconButton = styled.button`
@@ -7,13 +8,11 @@ const IconButton = styled.button`
   height: 50px;
   border-radius: 50%;
   background: #353b4e;
-  position: fixed;
-  bottom: 5vh;
-  right: 9%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-size: 1.5rem;
   border: none;
   outline: 0;
@@ -27,14 +26,17 @@ const IconButton = styled.button`
   }
 `;
 
-function HomeButton() {
+function HomeButton({ history }) {
+  const goHome = () => {
+    history.push('/');
+  };
   return (
     <>
-      <IconButton>
+      <IconButton onClick={goHome}>
         <BsFillHouseDoorFill />
       </IconButton>
     </>
   );
 }
 
-export default HomeButton;
+export default withRouter(HomeButton);

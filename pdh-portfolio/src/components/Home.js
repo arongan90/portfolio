@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './Header';
 import AboutMe from './AboutMe/AboutMe';
 import Skills from './Skills/Skills';
@@ -8,6 +8,9 @@ import Contact from './Contact/Contact';
 import ScrollToTop from './Button/ScrollToTop';
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />

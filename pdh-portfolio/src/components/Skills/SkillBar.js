@@ -9,7 +9,6 @@ const slideBar = keyframes`
     width: ${props => props.percent}%;
   }
 `;
-
 const Box = styled.div`
   display: flex;
   width: 100%;
@@ -49,6 +48,13 @@ const Number = styled.span`
   color: #bfc6d3;
   width: 70px;
   text-align: left;
+  opacity: 0;
+  ${props =>
+    props.visible &&
+    css`
+      opacity: 1;
+      transition: ${props.duration + 4}s;
+    `}
 `;
 const Explain = styled.span`
   font-size: 1rem;
@@ -80,7 +86,9 @@ function SkillBar({
             visible={visible}
           />
         </StickBox>
-        <Number>{percentNumber}%</Number>
+        <Number visible={visible} duration={propDuration}>
+          {percentNumber}%
+        </Number>
       </Box>
       <Explain>{explain}</Explain>
     </>

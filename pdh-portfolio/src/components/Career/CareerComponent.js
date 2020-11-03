@@ -1,5 +1,14 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+
+const slideBar = keyframes`
+  from {
+    height: 0;
+  }
+  to {
+    height: 120px;
+  }
+`;
 
 const CareerPosition = {
   first: { left: '-290px' },
@@ -11,6 +20,7 @@ const CareerPosition = {
 const CareerStyle = css`
   ${({ position }) => css`
     left: ${CareerPosition[position].left};
+    top: ${CareerPosition[position].top};
   `}
 `;
 
@@ -24,13 +34,20 @@ const Line = styled.div`
   width: 1px;
   height: 120px;
   background: #61d25b;
+  animation: ${slideBar} 3s;
 `;
-
 const Circle = styled.div`
   width: 15px;
   height: 15px;
   background: #61d25b;
   border-radius: 50%;
+  opacity: 0;
+  ${props =>
+    props.visible &&
+    css`
+      opacity: 1;
+      transition: 3s;
+    `}
 `;
 
 const Explain = styled.div`
@@ -41,24 +58,23 @@ const Explain = styled.div`
     margin-bottom: 1rem;
     color: #61d25b;
   }
-  overflow-wrap: break-word;
   position: relative;
   ${CareerStyle}
   ${TextAlign}
 `;
 
-function CareerComponent({ title, explain, position, align }) {
+function CareerComponent({ title, explain, position, align, visible }) {
   return (
     <>
-      <Circle>
+      <Circle position={position} visible={visible}>
         <Explain position={position} align={align}>
           <div className="title">{title}</div>
           {explain.split('/n').map(line => {
             return (
-              <div>
+              <>
                 {line}
                 <br />
-              </div>
+              </>
             );
           })}
         </Explain>

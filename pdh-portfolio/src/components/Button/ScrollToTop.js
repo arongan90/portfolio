@@ -9,7 +9,7 @@ const IconButton = styled.button`
   background: #353b4e;
   position: fixed;
   bottom: 5vh;
-  right: 5%;
+  right: 3%;
   color: white;
   display: flex;
   justify-content: center;
