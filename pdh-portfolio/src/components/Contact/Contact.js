@@ -41,6 +41,14 @@ const ContactContent = styled.div`
     display: inline-block;
     width: 200px;
   }
+  a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+    &:hover {
+      color: #61d25b;
+    }
+  }
 `;
 
 function Contact() {
@@ -56,15 +64,21 @@ function Contact() {
         </div>
         <div>
           <b>E-MAIL</b>
-          <span className="text">arongan90@gmail.com</span>
+          <span className="text">
+            <a href="mailto:arongan90@gmail.com">arongan90@gmail.com</a>
+          </span>
         </div>
         <div>
           <b>HOME PAGE</b>
-          <span className="text">www.github.io/arongan90</span>
+          <span className="text">
+            <a href="https://arongan90.github.io">arongan90.github.io</a>
+          </span>
         </div>
         <div>
           <b>GITHUB</b>
-          <span className="text">www.github.io/arongan90</span>
+          <span className="text">
+            <a href="https://github.com/arongan90">github.com/arongan90</a>
+          </span>
         </div>
       </ContactContent>
     </ContactBlock>
