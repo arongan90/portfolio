@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import login from '../../image/login.png';
-import register from '../../image/register.png';
+import login from '../../../image/login.png';
+import register from '../../../image/register.png';
 
-const WorkBlock = styled.div`
+const PortFolioBlock = styled.div`
   width: 100%;
   height: 1000px;
   background: linear-gradient(to bottom, #5a5f70, 95%, #717a88);
@@ -24,9 +24,9 @@ const Image = styled.img`
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
 `;
 
-function WorkPage2() {
+function PortFolioPage2() {
   return (
-    <WorkBlock>
+    <PortFolioBlock>
       <Explanation
         title="로그인/n회원가입"
         explain="
@@ -41,8 +41,8 @@ function WorkPage2() {
         <Image src={login}></Image>
         <Image src={register}></Image>
       </div>
-    </WorkBlock>
+    </PortFolioBlock>
   );
 }
 
-export default WorkPage2;
+export default PortFolioPage2;

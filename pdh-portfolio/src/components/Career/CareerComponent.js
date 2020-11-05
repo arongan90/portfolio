@@ -69,12 +69,12 @@ function CareerComponent({ title, explain, position, align, visible }) {
       <Circle position={position} visible={visible}>
         <Explain position={position} align={align}>
           <div className="title">{title}</div>
-          {explain.split('/n').map(line => {
+          {explain.split('/n').map((line, index) => {
             return (
-              <>
+              <div key={index}>
                 {line}
                 <br />
-              </>
+              </div>
             );
           })}
         </Explain>

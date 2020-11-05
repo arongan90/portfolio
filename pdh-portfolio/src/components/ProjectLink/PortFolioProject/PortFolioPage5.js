@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import restful from '../../image/restful.png';
-import jquery from '../../image/jquery.png';
+import restful from '../../../image/restful.png';
+import jquery from '../../../image/jquery.png';
 
-const WorkBlock = styled.div`
+const PortFolioBlock = styled.div`
   width: 100%;
   height: 1000px;
   background: #808895;
@@ -24,9 +24,9 @@ const Image = styled.img`
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
 `;
 
-function WorkPage6() {
+function PortFolioPage5() {
   return (
-    <WorkBlock>
+    <PortFolioBlock>
       <Explanation
         title="주요 코드"
         explain="
@@ -40,8 +40,8 @@ function WorkPage6() {
         <Image src={restful}></Image>
         <Image src={jquery}></Image>
       </div>
-    </WorkBlock>
+    </PortFolioBlock>
   );
 }
 
-export default WorkPage6;
+export default PortFolioPage5;

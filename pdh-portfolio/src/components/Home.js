@@ -11,6 +11,7 @@ function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <>
       <Header />
@@ -19,7 +20,7 @@ function Home() {
       <Project />
       <Career />
       <Contact />
-      <ScrollToTop showBelow={250} />
+      <ScrollToTop showBelow={99} />
     </>
   );
 }

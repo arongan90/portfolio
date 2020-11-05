@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ScrollIntoView from 'react-scroll-into-view';
 
 const HeaderBlock = styled.div`
   position: relative;
@@ -13,8 +14,7 @@ const HeaderBlock = styled.div`
   align-items: center;
   padding-left: 25%;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
-  a {
-    text-decoration: none;
+  span {
     margin-right: 25px;
     cursor: pointer;
     color: #a5a5a5;
@@ -28,11 +28,21 @@ function Header() {
   return (
     <>
       <HeaderBlock>
-        <a href="#about">ABOUT ME</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#project">PROJECT</a>
-        <a href="#career">CAREER</a>
-        <a href="#contact">CONTACT</a>
+        <ScrollIntoView selector="#about">
+          <span>ABOUT ME</span>
+        </ScrollIntoView>
+        <ScrollIntoView selector="#skills">
+          <span>SKILLS</span>
+        </ScrollIntoView>
+        <ScrollIntoView selector="#project">
+          <span>PROJECT</span>
+        </ScrollIntoView>
+        <ScrollIntoView selector="#career">
+          <span>CAREER</span>
+        </ScrollIntoView>
+        <ScrollIntoView selector="#contact">
+          <span>CONTACT</span>
+        </ScrollIntoView>
       </HeaderBlock>
     </>
   );

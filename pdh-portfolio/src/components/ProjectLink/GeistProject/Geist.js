@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import WorkPage1 from './WorkPage1';
-import WorkPage2 from './WorkPage2';
-import WorkPage3 from './WorkPage3';
-import WorkPage4 from './WorkPage4';
-import WorkPage5 from './WorkPage5';
-import HomeButton from '../Button/HomeButton';
-import ScrollToTop from '../Button/ScrollToTop';
+import WorkPage1 from './GeistPage1';
+import WorkPage2 from './GeistPage2';
+import WorkPage3 from './GeistPage3';
+import WorkPage4 from './GeistPage4';
+import WorkPage5 from './GeistPage5';
+import HomeButton from '../../Button/HomeButton';
+import ScrollToTop from '../../Button/ScrollToTop';
 
 const ButtonGroup = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const ButtonGroup = styled.div`
   padding-right: 25px;
 `;
 
-function Work() {
+function Geist() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -37,4 +37,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default Geist;

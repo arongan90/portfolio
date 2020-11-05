@@ -51,8 +51,12 @@ function Project() {
           <Link to="/geist">
             <LinkToProject src={geist}></LinkToProject>
           </Link>
-          <LinkToProject src={foodfesta}></LinkToProject>
-          <LinkToProject src={portfolio}></LinkToProject>
+          <Link to="/foodfesta">
+            <LinkToProject src={foodfesta}></LinkToProject>
+          </Link>
+          <Link to="/portfolio">
+            <LinkToProject src={portfolio}></LinkToProject>
+          </Link>
         </ProjectBox>
       </ProjectBlock>
     </>

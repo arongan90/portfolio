@@ -9,7 +9,7 @@ const Image = styled.img`
   margin: 25px 25px;
 `;
 
-const AboutMeContentsText = styled.text`
+const AboutMeContentsText = styled.div`
   color: lightgray;
   text-align: center;
   h2 {

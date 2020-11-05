@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import project from '../../image/project.png';
-import projectmodify from '../../image/projectmodify.png';
+import project from '../../../image/project.png';
+import projectmodify from '../../../image/projectmodify.png';
 
 const WorkBlock = styled.div`
   width: 100%;

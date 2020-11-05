@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import main from '../../image/main.png';
+import main from '../../../image/main.png';
 
-const WorkBlock = styled.div`
+const PortFolioBlock = styled.div`
   width: 100%;
   height: 1000px;
   background: linear-gradient(to bottom, #717a88, 95%, #4e5365);
@@ -24,9 +24,9 @@ const Image = styled.img`
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
 `;
 
-function WorkPage3() {
+function PortFolioPage3() {
   return (
-    <WorkBlock>
+    <PortFolioBlock>
       <Explanation
         title="메인 페이지"
         explain="그룹웨어 사이트를 고려해
@@ -37,8 +37,8 @@ function WorkPage3() {
       <div className="img">
         <Image src={main}></Image>
       </div>
-    </WorkBlock>
+    </PortFolioBlock>
   );
 }
 
-export default WorkPage3;
+export default PortFolioPage3;
