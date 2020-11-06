@@ -44,6 +44,7 @@ function Career() {
           visible={visible}
           position="first"
           align="right"
+          delay="2"
           title="2012년 3월 ~ 2014년 10월"
           explain="
               (주) BGF캐시넷 현금호송팀장직/n
@@ -53,6 +54,7 @@ function Career() {
         <CareerComponent
           visible={visible}
           position="second"
+          delay="5"
           title="2015년 1월 ~ 2019년 2월"
           explain="
               LG전자 임원수행직/n
@@ -63,6 +65,7 @@ function Career() {
           visible={visible}
           position="third"
           align="right"
+          delay="7"
           title="2019년 12월 ~ 2020년 6월"
           explain="
               IT 전문훈련기관/n
@@ -72,6 +75,7 @@ function Career() {
         <CareerComponent
           visible={visible}
           position="fourth"
+          delay="10"
           title="2020년 7월 ~ 9월"
           explain="
               (주) 플랫큐브 인턴직/n

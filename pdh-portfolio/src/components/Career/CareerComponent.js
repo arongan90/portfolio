@@ -34,7 +34,7 @@ const Line = styled.div`
   width: 1px;
   height: 120px;
   background: #61d25b;
-  animation: ${slideBar} 3s;
+  animation: ${slideBar} 4s;
 `;
 const Circle = styled.div`
   width: 15px;
@@ -46,7 +46,7 @@ const Circle = styled.div`
     props.visible &&
     css`
       opacity: 1;
-      transition: 3s;
+      transition: ${props.delay}s;
     `}
 `;
 
@@ -63,10 +63,10 @@ const Explain = styled.div`
   ${TextAlign}
 `;
 
-function CareerComponent({ title, explain, position, align, visible }) {
+function CareerComponent({ title, explain, position, align, visible, delay }) {
   return (
     <>
-      <Circle position={position} visible={visible}>
+      <Circle position={position} visible={visible} delay={delay}>
         <Explain position={position} align={align}>
           <div className="title">{title}</div>
           {explain.split('/n').map((line, index) => {

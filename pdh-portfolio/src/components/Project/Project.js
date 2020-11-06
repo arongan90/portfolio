@@ -1,9 +1,27 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 import geist from '../../image/geist.png';
 import foodfesta from '../../image/foodfesta.png';
 import portfolio from '../../image/portfolio.png';
+
+const bounce = keyframes`{
+  0%, 100%, 20%, 53%, 80% {
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transform: translate3d(0, 0, 0)
+  }
+  40%, 43% {
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transform: translate3d(0, -30px, 0)
+  }
+  70% {
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transform: translate3d(0, -15px, 0)
+  }
+  90% {
+    transform: translate3d(0, -4px, 0)
+  }
+}`;
 
 const ProjectBlock = styled.div`
   width: 100%;
@@ -33,11 +51,14 @@ const ProjectBox = styled.div`
   display: flex;
 `;
 
-const LinkToProject = styled.img`
+const ProjectImage = styled.img`
   width: 250px;
   height: 250px;
   border: solid 1px #4e5365;
   cursor: pointer;
+  &:hover {
+    animation: ${bounce} 0.8s;
+  }
 `;
 
 function Project() {
@@ -49,13 +70,13 @@ function Project() {
         </p>
         <ProjectBox>
           <Link to="/geist">
-            <LinkToProject src={geist}></LinkToProject>
+            <ProjectImage src={geist}></ProjectImage>
           </Link>
           <Link to="/foodfesta">
-            <LinkToProject src={foodfesta}></LinkToProject>
+            <ProjectImage src={foodfesta}></ProjectImage>
           </Link>
           <Link to="/portfolio">
-            <LinkToProject src={portfolio}></LinkToProject>
+            <ProjectImage src={portfolio}></ProjectImage>
           </Link>
         </ProjectBox>
       </ProjectBlock>

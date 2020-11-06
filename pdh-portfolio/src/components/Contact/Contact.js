@@ -71,13 +71,25 @@ function Contact() {
         <div>
           <b>HOME PAGE</b>
           <span className="text">
-            <a href="https://arongan90.github.io">arongan90.github.io</a>
+            <a
+              href="https://arongan90.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              arongan90.github.io
+            </a>
           </span>
         </div>
         <div>
           <b>GITHUB</b>
           <span className="text">
-            <a href="https://github.com/arongan90">github.com/arongan90</a>
+            <a
+              href="https://github.com/arongan90"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/arongan90
+            </a>
           </span>
         </div>
       </ContactContent>
