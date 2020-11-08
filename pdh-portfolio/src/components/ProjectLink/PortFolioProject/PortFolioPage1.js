@@ -33,12 +33,11 @@ function PortFolioPage1() {
   return (
     <PortFolioBlock>
       <Explanation
-        title="TEAM/nPROJECT"
+        title="PORTFOLIO"
         explain="
-            IT 훈련기관을 수료하며 배웠던 내용들로, 팀을 만들고 실무의
-            감을 익히기 위해 진행한 저의 첫 프로젝트 입니다./n
-            주제의 특성에 맞게 다양한 기능 및 기업의 효율적이며 편리한 업무를
-            위해 프로젝트 주제로 그룹웨어 사이트를 선정하였습니다.
+            개인 포트폴리오 웹사이트이며,/n
+            styled-components로 css를 구현,/n
+            react-router로 여러화면을 구성하였습니다.
           "
       />
       <div className="img">

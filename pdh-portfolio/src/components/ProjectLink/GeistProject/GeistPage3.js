@@ -29,10 +29,12 @@ function WorkPage3() {
     <WorkBlock>
       <Explanation
         title="메인 페이지"
-        explain="그룹웨어 사이트를 고려해
-          최대한 심플하게 제작하였으며,
-          부트스트랩 및 캘린더API를 이용하여
-          화면을 구현하였습니다."
+        explain="
+        그룹웨어 사이트를 고려해 메인화면을/n
+        최대한 심플하고 한눈에 들어오게 구현하였으며,/n
+        부트스트랩 및 캘린더API를 이용하여/n
+        화면을 구현하였습니다.
+        "
       />
       <div className="img">
         <Image src={main}></Image>

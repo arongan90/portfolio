@@ -35,7 +35,7 @@ function WorkPage2() {
         전체적인 테마로/n선정하였으며,
         jQuery를 이용하여 조건에/n맞지 않는
         값을 입력 받으면 경고메세지가/n
-        보여지도록 구현하였습니다."
+        나타나도록 구현하였습니다."
       />
       <div className="img">
         <Image src={login}></Image>

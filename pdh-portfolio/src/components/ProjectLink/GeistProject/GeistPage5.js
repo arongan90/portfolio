@@ -30,10 +30,9 @@ function WorkPage5() {
       <Explanation
         title="주요 코드"
         explain="
-          RestFul API를 사용하여
-          Ajax로 서버와 통신
-          JSP를 사용하여 페이지를
-          구현하였습니다.
+          RestFul API를 사용하여, client와 server가/n
+          Ajax를 통해 데이터를 요청 및 응답하였으며,/n 
+          jQuery를 사용하여 각 기능을 구현하였습니다.
         "
       />
       <div className="img">
