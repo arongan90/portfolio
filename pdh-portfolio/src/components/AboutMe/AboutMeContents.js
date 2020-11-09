@@ -46,9 +46,9 @@ function AboutMeContents() {
           <Keyword icon="Keyword A" position="A" align="right">
             <b>성실함과 책임감</b>
             <br />
-            임원 수행직과 현금 보안호송직의 경험으로
+            임원 수행직과 현금 보안호송직의
             <br />
-            사회생활에서 제일 중요한
+            경험으로 사회생활에서 제일 중요한
             <br />
             성실성과 책임감을 배우게 되었습니다
           </Keyword>

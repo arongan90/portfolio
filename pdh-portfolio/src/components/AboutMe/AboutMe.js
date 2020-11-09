@@ -10,7 +10,7 @@ const AboutMeBlock = styled.div`
     font-size: 4rem;
     color: white;
     font-weight: 900;
-    margin-top: 65px 0 0 0;
+    margin-top: 13%;
     padding-left: 25%;
   }
   p {
@@ -18,7 +18,7 @@ const AboutMeBlock = styled.div`
     color: white;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 10%;
   }
   .number {
     color: #959daa;
@@ -43,13 +43,13 @@ const AboutMeContentsBlock = styled.div`
 
 function AboutMe() {
   return (
-    <AboutMeBlock id="about">
+    <AboutMeBlock>
       <h1>
         I<span className="dash">'</span> M<br />
         A FRONT - END <br />
         DEVELOPER<span className="dash">.</span>
       </h1>
-      <p>
+      <p id="about">
         <span className="number">01</span>ABOUT ME
       </p>
       <AboutMeContentsBlock>
