@@ -11,15 +11,14 @@ const PortFolioBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .img {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
 `;
-
+const ImageBlock = styled.div`
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
 const Image = styled.img`
   width: 750px;
   height: 400px;
@@ -42,10 +41,10 @@ function PortFolioPage1() {
             구성하였습니다.
           "
       />
-      <div className="img">
+      <ImageBlock>
         <Image src={product}></Image>
         <Image src={main}></Image>
-      </div>
+      </ImageBlock>
     </PortFolioBlock>
   );
 }

@@ -69,7 +69,7 @@ function Career() {
           title="2019년 12월 ~ 2020년 6월"
           explain="
               IT 전문훈련기관/n
-              KIC 캠퍼스 학원 프론트엔드 백엔드/n
+              KIC 캠퍼스 프론트엔드 백엔드/n
               양성 과정 수료"
         />
         <CareerComponent

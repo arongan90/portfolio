@@ -11,11 +11,11 @@ const WorkBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .img {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-  }
+`;
+const ImageBlock = styled.div`
+  width: 900px;
+  display: flex;
+  justify-content: center;
 `;
 const Image = styled.img`
   width: 450px;
@@ -37,10 +37,10 @@ function WorkPage2() {
         값을 입력 받으면 경고메세지가/n
         나타나도록 구현하였습니다."
       />
-      <div className="img">
+      <ImageBlock>
         <Image src={login}></Image>
         <Image src={register}></Image>
-      </div>
+      </ImageBlock>
     </WorkBlock>
   );
 }

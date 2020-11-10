@@ -11,13 +11,13 @@ const WorkBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .img {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+`;
+const ImageBlock = styled.div`
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 const Image = styled.img`
   display: flex;
@@ -42,10 +42,10 @@ function WorkPage4() {
         서버와 데이터를 통신하도록 구성하였습니다.
         "
       />
-      <div className="img">
+      <ImageBlock>
         <Image src={project}></Image>
         <Image src={projectmodify}></Image>
-      </div>
+      </ImageBlock>
     </WorkBlock>
   );
 }

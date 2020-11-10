@@ -11,15 +11,14 @@ const FoodFestaBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .img {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
 `;
-
+const ImageBlock = styled.div`
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
 const Image = styled.img`
   width: 750px;
   height: 400px;
@@ -41,10 +40,10 @@ function FoodFestaPage1() {
             위해 프로젝트 주제로 그룹웨어 사이트를 선정하였습니다.
           "
       />
-      <div className="img">
+      <ImageBlock>
         <Image src={product}></Image>
         <Image src={main}></Image>
-      </div>
+      </ImageBlock>
     </FoodFestaBlock>
   );
 }

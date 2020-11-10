@@ -54,13 +54,13 @@ const Explain = styled.div`
   width: 250px;
   height: 200px;
   color: white;
-  .title {
-    margin-bottom: 1rem;
-    color: #61d25b;
-  }
   position: relative;
   ${CareerStyle}
   ${TextAlign}
+`;
+const Title = styled.div`
+  margin-bottom: 1rem;
+  color: #61d25b;
 `;
 
 function CareerComponent({ title, explain, position, align, visible, delay }) {
@@ -68,7 +68,7 @@ function CareerComponent({ title, explain, position, align, visible, delay }) {
     <>
       <Circle position={position} visible={visible} delay={delay}>
         <Explain position={position} align={align}>
-          <div className="title">{title}</div>
+          <Title>{title}</Title>
           {explain.split('/n').map((line, index) => {
             return (
               <div key={index}>

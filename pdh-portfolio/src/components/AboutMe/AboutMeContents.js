@@ -17,7 +17,7 @@ const AboutMeContentsText = styled.div`
     font-weight: 600;
     margin-top: 60px;
     margin-bottom: 8px;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     color: white;
   }
   h5 {

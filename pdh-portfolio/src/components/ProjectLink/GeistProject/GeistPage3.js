@@ -10,11 +10,11 @@ const WorkBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .img {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-  }
+`;
+const ImageBlock = styled.div`
+  width: 900px;
+  display: flex;
+  justify-content: center;
 `;
 const Image = styled.img`
   width: 850px;
@@ -36,9 +36,9 @@ function WorkPage3() {
         화면을 구현하였습니다.
         "
       />
-      <div className="img">
+      <ImageBlock>
         <Image src={main}></Image>
-      </div>
+      </ImageBlock>
     </WorkBlock>
   );
 }

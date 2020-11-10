@@ -11,11 +11,11 @@ const WorkBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .img {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-  }
+`;
+const ImageBlock = styled.div`
+  width: 900px;
+  display: flex;
+  justify-content: center;
 `;
 const Image = styled.img`
   width: 450px;
@@ -35,10 +35,10 @@ function WorkPage5() {
           jQuery를 사용하여 각 기능을 구현하였습니다.
         "
       />
-      <div className="img">
+      <ImageBlock>
         <Image src={restful}></Image>
         <Image src={jquery}></Image>
-      </div>
+      </ImageBlock>
     </WorkBlock>
   );
 }

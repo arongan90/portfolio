@@ -62,6 +62,13 @@ const Explain = styled.span`
   width: 435px;
   margin: 0 auto;
   margin-bottom: 1.3rem;
+  opacity: 0;
+  ${props =>
+    props.visible &&
+    css`
+      opacity: 1;
+      transition: 4s;
+    `}
 `;
 
 function SkillBar({
@@ -90,7 +97,7 @@ function SkillBar({
           {percentNumber}%
         </Number>
       </Box>
-      <Explain>{explain}</Explain>
+      <Explain visible={visible}>{explain}</Explain>
     </>
   );
 }
