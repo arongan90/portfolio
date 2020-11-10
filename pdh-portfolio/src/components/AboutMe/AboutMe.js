@@ -5,6 +5,7 @@ import AboutMeContents from './AboutMeContents';
 const AboutMeBlock = styled.div`
   width: 100%;
   background: linear-gradient(to bottom, #717a88, 55%, #444751);
+  padding-bottom: 5%;
   h1 {
     display: inline-block;
     font-size: 4rem;
@@ -38,7 +39,7 @@ const AboutMeContentsBlock = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.3);
 `;
 
 function AboutMe() {

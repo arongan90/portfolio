@@ -6,7 +6,7 @@ const slideBar = keyframes`
     height: 0;
   }
   to {
-    height: 120px;
+    height: 100px;
   }
 `;
 
@@ -32,7 +32,7 @@ const TextAlign = css`
 
 const Line = styled.div`
   width: 1px;
-  height: 120px;
+  height: 100px;
   background: #61d25b;
   animation: ${slideBar} 4s;
 `;

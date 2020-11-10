@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ContactBlock = styled.div`
   width: 100%;
-  height: 750px;
+  height: 700px;
   background: linear-gradient(to bottom, #5a5f70, 30%, #2d3038);
   p {
     font-size: 3rem;
@@ -20,13 +20,13 @@ const ContactBlock = styled.div`
 const ContactContent = styled.div`
   width: 860px;
   height: 500px;
-  background: linear-gradient(to top, #3c4152, #292d3b);
+  background: linear-gradient(to top, #383c4d, 20%, #292d3b);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   div {
     font-size: 1.5rem;
     color: white;

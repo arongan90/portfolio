@@ -6,7 +6,7 @@ import useScrollHook from '../../hooks/useScrollHook';
 const CareerBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: #5a5f70;
+  background: linear-gradient(to bottom, #4e5365, 10%, #5a5f70);
   display: flex;
   flex-direction: column;
   justify-content: center;

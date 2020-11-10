@@ -26,7 +26,7 @@ const bounce = keyframes`{
 const ProjectBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #4e5365, 80%, #5a5f70);
+  background: linear-gradient(to bottom, #4e5365, 80%, #4e5365);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,10 +54,13 @@ const ProjectBox = styled.div`
 const ProjectImage = styled.img`
   width: 250px;
   height: 250px;
-  border: solid 1px #4e5365;
+  border: solid 1px #959daa;
+  box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, 0.3);
   cursor: pointer;
   &:hover {
     animation: ${bounce} 0.8s;
+    /* transform: scale(1.1);
+    transition: 0.5s; */
   }
 `;
 
