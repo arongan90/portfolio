@@ -17,15 +17,15 @@ const ImageBlock = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 `;
 const Image = styled.img`
-  display: flex;
-  width: 750px;
-  height: 430px;
+  width: 450px;
+  height: 700px;
+  margin-right: 50px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
-  & + & {
-    margin: 30px 0 0;
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.2);
   }
 `;
 
@@ -33,13 +33,16 @@ function PortFolioPage4() {
   return (
     <PortFolioBlock>
       <Explanation
-        title="프로젝트/n페이지"
+        title="프로젝트/n주요 코드"
         explain="
-        진행중인 프로젝트를 관리, 조회 할 수 있는/n
-        페이지로 작성, 수정 페이지는/n
-        Modal로 구현, 선택된 프로젝트 번호를/n
-        Modal 페이지에 전달하여 프로젝트 번호로/n
-        서버와 데이터를 통신하도록 구성하였습니다.
+          IntersectionObserver API로/n
+          Scroll의 위치에 반응하여/n
+          Animation 효과가 적용 되도록/n
+          Hook을 만들어 각 컴포넌트에서/n
+          사용할 수 있도록 구현하였습니다./n
+          Hook에서는 상태를 관리하여/n
+          Scroll이 Top에 위치하면/n
+          버튼이 사라지도록 구현하였습니다./n
         "
       />
       <ImageBlock>

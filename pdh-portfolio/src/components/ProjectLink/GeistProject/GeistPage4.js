@@ -24,6 +24,10 @@ const Image = styled.img`
   width: 750px;
   height: 430px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.1);
+  }
   & + & {
     margin: 30px 0 0;
   }

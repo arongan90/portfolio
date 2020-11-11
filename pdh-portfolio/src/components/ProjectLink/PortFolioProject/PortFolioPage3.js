@@ -17,24 +17,34 @@ const ImageBlock = styled.div`
   justify-content: center;
 `;
 const Image = styled.img`
-  width: 850px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
+  width: 450px;
+  height: 700px;
+  margin-right: 50px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 function PortFolioPage3() {
   return (
     <PortFolioBlock>
       <Explanation
-        title="메인 페이지"
-        explain="그룹웨어 사이트를 고려해
-          최대한 심플하게 제작하였으며,
-          부트스트랩 및 캘린더API를 이용하여
-          화면을 구현하였습니다."
+        title="프로젝트/n주요 코드"
+        explain="
+          시크하면서 집중이 잘 되는 무채색의
+          각 컴포넌트 별로 구분하여 구조를 잡고,/n
+          컴포넌트 별 코드의 길이가 약 60~80줄/n
+          사이로 불필요한 코드를 줄이고/n
+          가독성을 높였습니다./n
+          Styled-components로 css를 작성/n
+          하였으며, props를 통해 조건에 맞는/n 
+          animation 효과를 주었습니다./n
+        "
       />
       <ImageBlock>
+        <Image src={main}></Image>
         <Image src={main}></Image>
       </ImageBlock>
     </PortFolioBlock>

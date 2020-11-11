@@ -11,19 +11,24 @@ const WorkBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .img {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+`;
+
+const ImageBlock = styled.div`
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const Image = styled.img`
   width: 750px;
   height: 400px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.1);
+  }
   & + & {
     margin: 30px 0 0;
   }
@@ -44,10 +49,10 @@ function WorkPage1() {
             업무를 할 수 있었던 좋은 경험이었습니다.
           "
       />
-      <div className="img">
+      <ImageBlock>
         <Image src={product}></Image>
         <Image src={main}></Image>
-      </div>
+      </ImageBlock>
     </WorkBlock>
   );
 }

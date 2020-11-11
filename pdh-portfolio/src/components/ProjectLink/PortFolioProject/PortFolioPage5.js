@@ -28,12 +28,9 @@ function PortFolioPage5() {
   return (
     <PortFolioBlock>
       <Explanation
-        title="주요 코드"
+        title="프로젝트/n주요 코드"
         explain="
-          RestFul API를 사용하여
-          Ajax로 서버와 통신
-          JSP를 사용하여 페이지를
-          구현하였습니다.
+          참고
         "
       />
       <ImageBlock>

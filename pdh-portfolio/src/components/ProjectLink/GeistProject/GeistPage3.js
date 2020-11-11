@@ -22,6 +22,10 @@ const Image = styled.img`
   display: flex;
   flex-direction: column;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 function WorkPage3() {

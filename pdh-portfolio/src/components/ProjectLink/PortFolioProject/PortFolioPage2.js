@@ -22,6 +22,10 @@ const Image = styled.img`
   height: 700px;
   margin-right: 50px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 function PortFolioPage2() {
@@ -30,14 +34,14 @@ function PortFolioPage2() {
       <Explanation
         title="Adobe Xd"
         explain="
-        시크하면서도 집중이 잘 되는
-        무채색 컬러로 디자인 하였으며, 
-        포인트로 밝은 연두색을 주었습니다.
-        프로토타입으로 각 버튼에 맞게 
-        페이지 이동을 설정하였으며,
-        개발 할 때 구조를 편하게 
-        짜기위하여 그룹별로 묶어서
-        디자인 하였습니다.
+          시크하면서 집중이 잘 되는 무채색의/n
+          어두운 계열로 디자인 하였으며,/n
+          포인트로 밝은 연두색을 주었습니다./n
+          프로토타입으로 각 버튼에 맞게/n
+          페이지 이동을 설정하였으며,/n
+          개발 할 때 구조를 편하게/n
+          짜기위하여 그룹별로 묶어서/n
+          디자인 하였습니다./n
         "
       />
       <ImageBlock>

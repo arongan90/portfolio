@@ -34,11 +34,11 @@ function PortFolioPage1() {
       <Explanation
         title="PORTFOLIO/nPROJECT"
         explain="
-            현재 보고계신 포트폴리오 웹 사이트이며/n
-            React를 사용하여 전제적으로 작성하였으며,/n
-            styled-components로 css를 구현,/n
-            react-router로 여러 페이지를 SPA로/n
-            구성하였습니다.
+            현재 보고계신 저의 포트폴리오 웹 사이트이며/n
+            Adobe Xd로 디자인 후,/n
+            React를 사용하여 구현하였으며,/n
+            styled-components 및/n
+            react-router를 사용하였습니다.
           "
       />
       <ImageBlock>
