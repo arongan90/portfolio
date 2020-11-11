@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import login from '../../../image/login.png';
+import portfolio_xd from '../../../image/portfolio_xd.png';
 import register from '../../../image/register.png';
 
 const PortFolioBlock = styled.div`
@@ -28,17 +28,20 @@ function PortFolioPage2() {
   return (
     <PortFolioBlock>
       <Explanation
-        title="로그인/n회원가입"
+        title="Adobe Xd"
         explain="
-        NAVER의 로그인, 회원가입 페이지를
-        참고,/n우아한 형제들의 민트색을
-        전체적인 테마로/n선정하였으며,
-        jQuery를 이용하여 조건에/n맞지 않는
-        값을 입력 받으면 경고메세지가/n
-        보여지도록 구현하였습니다."
+        시크하면서도 집중이 잘 되는
+        무채색 컬러로 디자인 하였으며, 
+        포인트로 밝은 연두색을 주었습니다.
+        프로토타입으로 각 버튼에 맞게 
+        페이지 이동을 설정하였으며,
+        개발 할 때 구조를 편하게 
+        짜기위하여 그룹별로 묶어서
+        디자인 하였습니다.
+        "
       />
       <ImageBlock>
-        <Image src={login}></Image>
+        <Image src={portfolio_xd}></Image>
         <Image src={register}></Image>
       </ImageBlock>
     </PortFolioBlock>

@@ -32,7 +32,6 @@ const StickBox = styled.div`
   height: 20px;
   margin-right: 5px;
 `;
-
 const StickColor = styled.div`
   display: flex;
   background-color: #61d25b;
@@ -81,7 +80,6 @@ function SkillBar({
 }) {
   const propPercent = parseInt(percentBar);
   const propDuration = parseFloat(durationTime);
-
   return (
     <>
       <Box>

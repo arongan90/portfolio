@@ -17,12 +17,11 @@ const SkillsBlock = styled.div`
     text-align: center;
     margin: 0;
   }
-  .number {
-    color: #959daa;
-    margin-right: 15px;
-  }
 `;
-
+const TitleNumber = styled.span`
+  color: #959daa;
+  margin-right: 15px;
+`;
 const SkillContents = styled.div`
   display: flex;
   flex-direction: column;
@@ -30,7 +29,6 @@ const SkillContents = styled.div`
   margin: 0 auto;
   margin-top: 70px;
 `;
-
 const AddExplain = styled.span`
   font-size: 1.5rem;
   color: white;
@@ -45,7 +43,7 @@ function Skills() {
   return (
     <SkillsBlock id="skills">
       <p>
-        <span className="number">02</span>SKILLS
+        <TitleNumber className="number">02</TitleNumber>SKILLS
       </p>
       <SkillContents {...animationScroll}>
         <SkillBar

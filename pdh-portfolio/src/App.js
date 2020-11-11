@@ -1,7 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { Route } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/Main/Home';
 import Geist from './components/ProjectLink/GeistProject/Geist';
 import FoodFesta from './components/ProjectLink/FoodFestaProject/FoodFesta';
 import PortFolio from './components/ProjectLink/PortFolioProject/PortFolio';
@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: nanum-gothic;
     width: 100%;
     margin: 0;
-    position: relative;
   }
 `;
 
