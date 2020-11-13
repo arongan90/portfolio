@@ -25,7 +25,7 @@ const Image = styled.img`
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
   transition: 0.7s;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
   }
 `;
 
@@ -40,8 +40,8 @@ function PortFolioPage4() {
           Animation 효과가 적용 되도록/n
           Hook을 만들어 각 컴포넌트에서/n
           사용할 수 있도록 구현하였습니다./n
-          Hook에서는 상태를 관리하여/n
-          Scroll이 Top에 위치하면/n
+          또한 Top 버튼은 상태를 관리하여/n
+          Scroll이 최상단에 위치하였을 땐/n
           버튼이 사라지도록 구현하였습니다./n
         "
       />

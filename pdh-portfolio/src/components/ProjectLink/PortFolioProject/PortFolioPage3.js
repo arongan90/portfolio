@@ -23,7 +23,7 @@ const Image = styled.img`
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
   transition: 0.7s;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
   }
 `;
 

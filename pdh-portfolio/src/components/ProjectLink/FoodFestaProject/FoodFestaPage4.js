@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import project from '../../../image/project.png';
-import projectmodify from '../../../image/projectmodify.png';
+import food_main1 from '../../../image/food_main1.png';
+import food_main2 from '../../../image/food_main2.png';
 
 const FoodFestaBlock = styled.div`
   width: 100%;
@@ -16,16 +16,15 @@ const ImageBlock = styled.div`
   width: 900px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 `;
 const Image = styled.img`
-  display: flex;
-  width: 750px;
-  height: 430px;
+  width: 400px;
+  height: 700px;
+  margin-right: 50px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
-  & + & {
-    margin: 30px 0 0;
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.15);
   }
 `;
 
@@ -33,18 +32,18 @@ function FoodFestaPage4() {
   return (
     <FoodFestaBlock>
       <Explanation
-        title="프로젝트/n페이지"
+        title="메인/n페이지"
         explain="
-        진행중인 프로젝트를 관리, 조회 할 수 있는/n
-        페이지로 작성, 수정 페이지는/n
-        Modal로 구현, 선택된 프로젝트 번호를/n
-        Modal 페이지에 전달하여 프로젝트 번호로/n
-        서버와 데이터를 통신하도록 구성하였습니다.
+          메인화면 역시 최대한 심플하고/n
+          한눈에 들어오는 구성으로/n
+          상단 Tab 메뉴로 각 페이지를/n
+          이동하며 같은 데이터를/n
+          다양하게 표현하였습니다.
         "
       />
       <ImageBlock>
-        <Image src={project}></Image>
-        <Image src={projectmodify}></Image>
+        <Image src={food_main1}></Image>
+        <Image src={food_main2}></Image>
       </ImageBlock>
     </FoodFestaBlock>
   );
