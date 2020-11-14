@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import main from '../../../image/main.png';
-import product from '../../../image/product.png';
+import portfolio_main from '../../../image/portfolio_main.png';
 
 const PortFolioBlock = styled.div`
   width: 100%;
@@ -38,7 +37,7 @@ function PortFolioPage1() {
       <Explanation
         title="PORTFOLIO/nPROJECT"
         explain="
-            현재 보고계신 저의 포트폴리오 웹 사이트이며/n
+            현재 보고계신 포트폴리오 웹 사이트이며/n
             Adobe Xd로 디자인 후,/n
             React를 사용하여 구현하였으며,/n
             styled-components 및/n
@@ -46,8 +45,8 @@ function PortFolioPage1() {
           "
       />
       <ImageBlock>
-        <Image src={product}></Image>
-        <Image src={main}></Image>
+        <Image src={portfolio_main}></Image>
+        <Image src={portfolio_main}></Image>
       </ImageBlock>
     </PortFolioBlock>
   );

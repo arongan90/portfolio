@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import portfolio_xd from '../../../image/portfolio_xd.png';
-import register from '../../../image/register.png';
+import portfolio_xd1 from '../../../image/portfolio_xd1.png';
+import portfolio_xd2 from '../../../image/portfolio_xd2.png';
 
 const PortFolioBlock = styled.div`
   width: 100%;
@@ -45,8 +45,8 @@ function PortFolioPage2() {
         "
       />
       <ImageBlock>
-        <Image src={portfolio_xd}></Image>
-        <Image src={register}></Image>
+        <Image src={portfolio_xd1}></Image>
+        <Image src={portfolio_xd2}></Image>
       </ImageBlock>
     </PortFolioBlock>
   );

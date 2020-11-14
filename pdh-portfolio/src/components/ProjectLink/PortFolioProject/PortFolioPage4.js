@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import project from '../../../image/project.png';
-import projectmodify from '../../../image/projectmodify.png';
+import scroll_hooks from '../../../image/scroll_hooks.png';
+import scroll_to_top from '../../../image/scroll_to_top.png';
 
 const PortFolioBlock = styled.div`
   width: 100%;
@@ -19,13 +19,13 @@ const ImageBlock = styled.div`
   align-items: center;
 `;
 const Image = styled.img`
-  width: 450px;
+  width: 500px;
   height: 700px;
   margin-right: 50px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
   transition: 0.7s;
   &:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 `;
 
@@ -46,8 +46,8 @@ function PortFolioPage4() {
         "
       />
       <ImageBlock>
-        <Image src={project}></Image>
-        <Image src={projectmodify}></Image>
+        <Image src={scroll_hooks}></Image>
+        <Image src={scroll_to_top}></Image>
       </ImageBlock>
     </PortFolioBlock>
   );

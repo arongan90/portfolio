@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import main from '../../../image/main.png';
+import portfolio_css from '../../../image/portfolio_css.png';
+import portfolio_config from '../../../image/portfolio_config.png';
 
 const PortFolioBlock = styled.div`
   width: 100%;
@@ -26,6 +27,15 @@ const Image = styled.img`
     transform: scale(1.15);
   }
 `;
+const Image2 = styled.img`
+  width: 500px;
+  height: 700px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.15);
+  }
+`;
 
 function PortFolioPage3() {
   return (
@@ -33,7 +43,6 @@ function PortFolioPage3() {
       <Explanation
         title="프로젝트/n주요 코드"
         explain="
-          시크하면서 집중이 잘 되는 무채색의
           각 컴포넌트 별로 구분하여 구조를 잡고,/n
           컴포넌트 별 코드의 길이가 약 60~80줄/n
           사이로 불필요한 코드를 줄이고/n
@@ -44,8 +53,8 @@ function PortFolioPage3() {
         "
       />
       <ImageBlock>
-        <Image src={main}></Image>
-        <Image src={main}></Image>
+        <Image src={portfolio_css}></Image>
+        <Image2 src={portfolio_config}></Image2>
       </ImageBlock>
     </PortFolioBlock>
   );
