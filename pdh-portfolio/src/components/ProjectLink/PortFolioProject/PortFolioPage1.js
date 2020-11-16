@@ -35,7 +35,7 @@ function PortFolioPage1() {
   return (
     <PortFolioBlock>
       <Explanation
-        title="PORTFOLIO/nPROJECT"
+        title="PortFolio"
         explain="
             현재 보고계신 포트폴리오 웹 사이트이며/n
             Adobe Xd로 디자인 후,/n

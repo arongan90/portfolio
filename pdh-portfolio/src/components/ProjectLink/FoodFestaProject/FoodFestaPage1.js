@@ -36,7 +36,7 @@ function FoodFestaPage1() {
   return (
     <FoodFestaBlock>
       <Explanation
-        title="FOOD FESTA/nPROJECT"
+        title="Food Festa"
         explain="
           (주)플랫큐브의 인턴직으로 근무하며/n
           농림축산부 앱 개발에 참여하여/n

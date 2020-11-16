@@ -32,7 +32,7 @@ function PortFolioPage2() {
   return (
     <PortFolioBlock>
       <Explanation
-        title="Adobe Xd"
+        title="Adobe Xd/nDesign"
         explain="
           시크하면서 집중이 잘 되는 무채색의/n
           어두운 계열로 디자인 하였으며,/n

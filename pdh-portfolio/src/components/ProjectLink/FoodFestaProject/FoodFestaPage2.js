@@ -36,7 +36,7 @@ function FoodFestaPage2() {
   return (
     <FoodFestaBlock>
       <Explanation
-        title="ADOBE XD/nDESIGN"
+        title="Adobe Xd/nDesign"
         explain="
           기획 당시 클라이언트의 요구사항으로/n
           - 맛있어 보이는 심플한 UI 디자인/n
