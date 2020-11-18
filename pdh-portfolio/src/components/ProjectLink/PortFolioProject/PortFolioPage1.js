@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
 import portfolio_main from '../../../image/portfolio_main.png';
+import portfolio_skill from '../../../image/portfolio_skill.png';
 
 const PortFolioBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #717a88, 95%, #5a5f70);
+  background: linear-gradient(to bottom, #4e5365, 95%, #5a5f70);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -19,7 +20,7 @@ const ImageBlock = styled.div`
   flex-direction: column;
 `;
 const Image = styled.img`
-  width: 750px;
+  width: 700px;
   height: 400px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
   transition: 0.7s;
@@ -45,7 +46,7 @@ function PortFolioPage1() {
           "
       />
       <ImageBlock>
-        <Image src={portfolio_main}></Image>
+        <Image src={portfolio_skill}></Image>
         <Image src={portfolio_main}></Image>
       </ImageBlock>
     </PortFolioBlock>

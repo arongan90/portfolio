@@ -7,7 +7,7 @@ import food_web from '../../../image/food_web.png';
 const FoodFestaBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #717a88, 95%, #5a5f70);
+  background: linear-gradient(to bottom, #4e5365, 95%, #5a5f70);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -20,7 +20,7 @@ const ImageBlock = styled.div`
   flex-direction: column;
 `;
 const Image = styled.img`
-  width: 750px;
+  width: 700px;
   height: 400px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
   transition: 0.7s;
@@ -41,7 +41,7 @@ function FoodFestaPage1() {
           (주)플랫큐브의 인턴직으로 근무하며/n
           농림축산부 앱 개발에 참여하여/n
           기획, 디자인 및 개발을 진행하였습니다./n
-          당시 React에 대한 지식이 부족하였지만,/n
+          당시 React에 이해와 지식이 조금 부족하였지만,/n
           부족한 부분을 만회하기 위해 더욱/n
           주도적이며 적극적으로 참여하였습니다.        
         "

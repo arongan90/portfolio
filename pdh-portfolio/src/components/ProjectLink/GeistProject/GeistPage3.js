@@ -32,7 +32,7 @@ function WorkPage3() {
   return (
     <WorkBlock>
       <Explanation
-        title="메인 페이지"
+        title="메인/n페이지"
         explain="
         그룹웨어 사이트를 고려해 메인화면을/n
         최대한 심플하고 한눈에 들어오게 구현하였으며,/n

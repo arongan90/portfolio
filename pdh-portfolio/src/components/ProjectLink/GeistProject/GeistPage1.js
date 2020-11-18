@@ -7,7 +7,7 @@ import product from '../../../image/product.png';
 const WorkBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #717a88, 95%, #5a5f70);
+  background: linear-gradient(to bottom, #4e5365, 95%, #5a5f70);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -22,7 +22,7 @@ const ImageBlock = styled.div`
 `;
 
 const Image = styled.img`
-  width: 750px;
+  width: 700px;
   height: 400px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
   transition: 0.7s;

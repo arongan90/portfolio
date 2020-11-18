@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Explanation from './Explanation';
-import restful from '../../../image/restful.png';
-import jquery from '../../../image/jquery.png';
+import food_web from '../../../image/food_web.png';
 
 const FoodFestaBlock = styled.div`
   width: 100%;
@@ -18,27 +17,34 @@ const ImageBlock = styled.div`
   justify-content: center;
 `;
 const Image = styled.img`
-  width: 450px;
-  height: 700px;
-  margin-right: 50px;
+  width: 850px;
+  height: 550px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 function FoodFestaPage5() {
   return (
     <FoodFestaBlock>
       <Explanation
-        title="주요 코드"
+        title="푸드페스타/n홈페이지"
         explain="
-          RestFul API를 사용하여
-          Ajax로 서버와 통신
-          JSP를 사용하여 페이지를
-          구현하였습니다.
+          이미지를 클릭하시면/n
+          food-festa 웹 사이트로/n
+          이동합니다.
         "
       />
       <ImageBlock>
-        <Image src={restful}></Image>
-        <Image src={jquery}></Image>
+        <a
+          href="http://www.food-festa.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src={food_web}></Image>
+        </a>
       </ImageBlock>
     </FoodFestaBlock>
   );

@@ -18,13 +18,13 @@ const ImageBlock = styled.div`
   justify-content: center;
 `;
 const Image = styled.img`
-  width: 400px;
+  width: 350px;
   height: 700px;
   margin-right: 50px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
   transition: 0.7s;
   &:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 `;
 

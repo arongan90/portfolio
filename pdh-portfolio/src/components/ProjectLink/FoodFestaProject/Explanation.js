@@ -27,23 +27,23 @@ function Explanation({ title, explain }) {
     <>
       <ExplanBlock>
         <h1>
-          {title.split('/n').map(line => {
+          {title.split('/n').map((line, index) => {
             return (
-              <>
+              <div key={index}>
                 {line}
                 <br />
-              </>
+              </div>
             );
           })}
         </h1>
         <Line />
         <Text>
-          {explain.split('/n').map(line => {
+          {explain.split('/n').map((line, index) => {
             return (
-              <>
+              <div key={index}>
                 {line}
                 <br />
-              </>
+              </div>
             );
           })}
         </Text>

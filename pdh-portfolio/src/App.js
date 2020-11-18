@@ -8,7 +8,7 @@ import PortFolio from './components/ProjectLink/PortFolioProject/PortFolio';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: nanum-gothic;
+    font-family: sans-serif;
     width: 100%;
     margin: 0;
   }

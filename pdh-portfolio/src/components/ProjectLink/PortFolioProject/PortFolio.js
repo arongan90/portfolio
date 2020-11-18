@@ -4,7 +4,6 @@ import PortFolioPage1 from './PortFolioPage1';
 import PortFolioPage2 from './PortFolioPage2';
 import PortFolioPage3 from './PortFolioPage3';
 import PortFolioPage4 from './PortFolioPage4';
-import PortFolioPage5 from './PortFolioPage5';
 import HomeButton from '../../Button/HomeButton';
 import ScrollToTop from '../../Button/ScrollToTop';
 
@@ -28,7 +27,6 @@ function PortFolio() {
       <PortFolioPage2 />
       <PortFolioPage3 />
       <PortFolioPage4 />
-      <PortFolioPage5 />
       <ButtonGroup>
         <HomeButton />
         <ScrollToTop />

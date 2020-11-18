@@ -7,7 +7,8 @@ import jquery from '../../../image/jquery.png';
 const WorkBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: #808895;
+  background: linear-gradient(to bottom, #717a88, 95%, #808895);
+  background: #717a88;
   display: flex;
   align-items: center;
   justify-content: space-around;
