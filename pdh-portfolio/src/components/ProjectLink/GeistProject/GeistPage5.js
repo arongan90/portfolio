@@ -7,8 +7,7 @@ import jquery from '../../../image/jquery.png';
 const WorkBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #717a88, 95%, #808895);
-  background: #717a88;
+  background: linear-gradient(to bottom, #717a88, 85%, #5a5f70);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -29,7 +28,7 @@ const Image = styled.img`
   }
 `;
 
-function WorkPage5() {
+function GeistPage5() {
   return (
     <WorkBlock>
       <Explanation
@@ -48,4 +47,4 @@ function WorkPage5() {
   );
 }
 
-export default WorkPage5;
+export default GeistPage5;

@@ -6,7 +6,7 @@ import food_web from '../../../image/food_web.png';
 const FoodFestaBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: #808895;
+  background: linear-gradient(to bottom, #717a88, 85%, #4e5365);
   display: flex;
   align-items: center;
   justify-content: space-around;

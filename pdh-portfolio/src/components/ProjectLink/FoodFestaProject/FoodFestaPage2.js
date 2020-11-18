@@ -7,7 +7,7 @@ import food_xd2 from '../../../image/food_xd2.png';
 const FoodFestaBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #5a5f70, 95%, #717a88);
+  background: linear-gradient(to bottom, #5a5f70, 95%, #69717e);
   display: flex;
   align-items: center;
   justify-content: space-around;

@@ -7,7 +7,7 @@ import food_register from '../../../image/food_register.png';
 const FoodFestaBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #717a88, 95%, #4e5365);
+  background: linear-gradient(to bottom, #69717e, 95%, #808895);
   display: flex;
   align-items: center;
   justify-content: space-around;

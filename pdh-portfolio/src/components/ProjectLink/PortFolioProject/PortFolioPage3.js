@@ -7,7 +7,7 @@ import portfolio_config from '../../../image/portfolio_config.png';
 const PortFolioBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #717a88, 95%, #4e5365);
+  background: linear-gradient(to bottom, #717a88, 95%, #5a5f70);
   display: flex;
   align-items: center;
   justify-content: space-around;

@@ -34,6 +34,7 @@ function PortFolioPage2() {
       <Explanation
         title="Adobe Xd/nDesign"
         explain="
+          포트폴리오 템플릿 구조를 참고하여/n
           시크하면서 집중이 잘 되는 무채색의/n
           어두운 계열로 디자인 하였으며,/n
           포인트로 밝은 연두색을 주었습니다./n

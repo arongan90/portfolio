@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import WorkPage1 from './GeistPage1';
-import WorkPage2 from './GeistPage2';
-import WorkPage3 from './GeistPage3';
-import WorkPage4 from './GeistPage4';
-import WorkPage5 from './GeistPage5';
+import GeistPage1 from './GeistPage1';
+import GeistPage2 from './GeistPage2';
+import GeistPage3 from './GeistPage3';
+import GeistPage4 from './GeistPage4';
+import GeistPage5 from './GeistPage5';
 import HomeButton from '../../Button/HomeButton';
 import ScrollToTop from '../../Button/ScrollToTop';
 
@@ -24,11 +24,11 @@ function Geist() {
   }, []);
   return (
     <>
-      <WorkPage1 />
-      <WorkPage2 />
-      <WorkPage3 />
-      <WorkPage4 />
-      <WorkPage5 />
+      <GeistPage1 />
+      <GeistPage2 />
+      <GeistPage3 />
+      <GeistPage4 />
+      <GeistPage5 />
       <ButtonGroup>
         <HomeButton />
         <ScrollToTop />

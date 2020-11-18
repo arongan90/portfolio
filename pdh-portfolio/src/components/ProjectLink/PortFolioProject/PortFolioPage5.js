@@ -7,7 +7,8 @@ import jquery from '../../../image/jquery.png';
 const PortFolioBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: #808895;
+  background: linear-gradient(to bottom, #5a5f70, 95%, #4e5365);
+  /* background: #808895; */
   display: flex;
   align-items: center;
   justify-content: space-around;

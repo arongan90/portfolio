@@ -7,7 +7,7 @@ import projectmodify from '../../../image/projectmodify.png';
 const WorkBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #4e5365, 95%, #808895);
+  background: linear-gradient(to bottom, #808895, 95%, #717a88);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -33,7 +33,7 @@ const Image = styled.img`
   }
 `;
 
-function WorkPage4() {
+function GeistPage4() {
   return (
     <WorkBlock>
       <Explanation
@@ -54,4 +54,4 @@ function WorkPage4() {
   );
 }
 
-export default WorkPage4;
+export default GeistPage4;

@@ -7,7 +7,7 @@ import scroll_to_top from '../../../image/scroll_to_top.png';
 const PortFolioBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #4e5365, 95%, #808895);
+  background: linear-gradient(to bottom, #5a5f70, 70%, #4e5365);
   display: flex;
   align-items: center;
   justify-content: space-around;

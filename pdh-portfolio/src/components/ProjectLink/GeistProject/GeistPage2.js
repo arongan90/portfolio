@@ -7,7 +7,7 @@ import register from '../../../image/register.png';
 const WorkBlock = styled.div`
   width: 100%;
   height: 1000px;
-  background: linear-gradient(to bottom, #5a5f70, 95%, #717a88);
+  background: linear-gradient(to bottom, #5a5f70, 95%, #69717e);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -28,7 +28,7 @@ const Image = styled.img`
   }
 `;
 
-function WorkPage2() {
+function GeistPage2() {
   return (
     <WorkBlock>
       <Explanation
@@ -49,4 +49,4 @@ function WorkPage2() {
   );
 }
 
-export default WorkPage2;
+export default GeistPage2;

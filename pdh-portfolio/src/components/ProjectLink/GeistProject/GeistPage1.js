@@ -34,7 +34,7 @@ const Image = styled.img`
   }
 `;
 
-function WorkPage1() {
+function GeistPage1() {
   return (
     <WorkBlock>
       <Explanation
@@ -57,4 +57,4 @@ function WorkPage1() {
   );
 }
 
-export default WorkPage1;
+export default GeistPage1;
